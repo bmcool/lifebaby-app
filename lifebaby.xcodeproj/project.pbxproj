@@ -19,7 +19,20 @@
 		7969400016FDFA6300302DFA /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79693FFE16FDFA6300302DFA /* MainStoryboard_iPhone.storyboard */; };
 		7969400316FDFA6300302DFA /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7969400116FDFA6300302DFA /* MainStoryboard_iPad.storyboard */; };
 		7969400616FDFA6300302DFA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969400516FDFA6300302DFA /* ViewController.m */; };
+		7969400F16FE006200302DFA /* Role.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969400E16FE006200302DFA /* Role.m */; };
+		796940D916FE295900302DFA /* module.m in Sources */ = {isa = PBXBuildFile; fileRef = 796940D016FE295900302DFA /* module.m */; };
+		796940DA16FE295900302DFA /* PedometerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 796940D216FE295900302DFA /* PedometerViewController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		796940DC16FE295A00302DFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 796940D316FE295900302DFA /* module.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 79A8EAE816FDAEDD00DFD30B;
+			remoteInfo = module;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		79693FE216FDFA6300302DFA /* lifebaby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lifebaby.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +52,14 @@
 		7969400216FDFA6300302DFA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		7969400416FDFA6300302DFA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7969400516FDFA6300302DFA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7969400D16FE006200302DFA /* Role.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Role.h; sourceTree = "<group>"; };
+		7969400E16FE006200302DFA /* Role.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Role.m; sourceTree = "<group>"; };
+		796940CE16FE295900302DFA /* module-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "module-Prefix.pch"; sourceTree = "<group>"; };
+		796940CF16FE295900302DFA /* module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = module.h; sourceTree = "<group>"; };
+		796940D016FE295900302DFA /* module.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = module.m; sourceTree = "<group>"; };
+		796940D116FE295900302DFA /* PedometerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PedometerViewController.h; sourceTree = "<group>"; };
+		796940D216FE295900302DFA /* PedometerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PedometerViewController.m; sourceTree = "<group>"; };
+		796940D316FE295900302DFA /* module.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = module.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +79,7 @@
 		79693FD716FDFA6300302DFA = {
 			isa = PBXGroup;
 			children = (
+				796940CC16FE295900302DFA /* module */,
 				79693FEC16FDFA6300302DFA /* lifebaby */,
 				79693FE516FDFA6300302DFA /* Frameworks */,
 				79693FE316FDFA6300302DFA /* Products */,
@@ -85,6 +107,7 @@
 		79693FEC16FDFA6300302DFA /* lifebaby */ = {
 			isa = PBXGroup;
 			children = (
+				7969400C16FE002800302DFA /* Models */,
 				79693FF516FDFA6300302DFA /* AppDelegate.h */,
 				79693FF616FDFA6300302DFA /* AppDelegate.m */,
 				79693FFE16FDFA6300302DFA /* MainStoryboard_iPhone.storyboard */,
@@ -108,6 +131,45 @@
 				79693FFC16FDFA6300302DFA /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7969400C16FE002800302DFA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7969400D16FE006200302DFA /* Role.h */,
+				7969400E16FE006200302DFA /* Role.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		796940CC16FE295900302DFA /* module */ = {
+			isa = PBXGroup;
+			children = (
+				796940CD16FE295900302DFA /* module */,
+				796940D316FE295900302DFA /* module.xcodeproj */,
+			);
+			name = module;
+			path = ../module;
+			sourceTree = "<group>";
+		};
+		796940CD16FE295900302DFA /* module */ = {
+			isa = PBXGroup;
+			children = (
+				796940CE16FE295900302DFA /* module-Prefix.pch */,
+				796940CF16FE295900302DFA /* module.h */,
+				796940D016FE295900302DFA /* module.m */,
+				796940D116FE295900302DFA /* PedometerViewController.h */,
+				796940D216FE295900302DFA /* PedometerViewController.m */,
+			);
+			path = module;
+			sourceTree = "<group>";
+		};
+		796940D416FE295900302DFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				796940DD16FE295A00302DFA /* libmodule.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,12 +211,28 @@
 			mainGroup = 79693FD716FDFA6300302DFA;
 			productRefGroup = 79693FE316FDFA6300302DFA /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 796940D416FE295900302DFA /* Products */;
+					ProjectRef = 796940D316FE295900302DFA /* module.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				79693FE116FDFA6300302DFA /* lifebaby */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		796940DD16FE295A00302DFA /* libmodule.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libmodule.a;
+			remoteRef = 796940DC16FE295A00302DFA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		79693FE016FDFA6300302DFA /* Resources */ = {
@@ -180,6 +258,9 @@
 				79693FF316FDFA6300302DFA /* main.m in Sources */,
 				79693FF716FDFA6300302DFA /* AppDelegate.m in Sources */,
 				7969400616FDFA6300302DFA /* ViewController.m in Sources */,
+				7969400F16FE006200302DFA /* Role.m in Sources */,
+				796940D916FE295900302DFA /* module.m in Sources */,
+				796940DA16FE295900302DFA /* PedometerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +316,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -256,7 +337,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
