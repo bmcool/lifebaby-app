@@ -10,6 +10,18 @@
 
 @implementation Role
 
+static Role *sharedInstance;
 
++ (id)sharedInstance
+{
+    if (!sharedInstance)
+    {
+        @synchronized(self)
+        {
+            sharedInstance = [[self alloc] init];
+        }
+    }
+    return sharedInstance;
+}
 
 @end
