@@ -20,7 +20,10 @@
 		7969400316FDFA6300302DFA /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7969400116FDFA6300302DFA /* MainStoryboard_iPad.storyboard */; };
 		7969400616FDFA6300302DFA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969400516FDFA6300302DFA /* ViewController.m */; };
 		7969400F16FE006200302DFA /* Role.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969400E16FE006200302DFA /* Role.m */; };
-		7998C08E16FED27600411669 /* SportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7998C08D16FED27600411669 /* SportViewController.m */; };
+		7998C08E16FED27600411669 /* HandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7998C08D16FED27600411669 /* HandViewController.m */; };
+		79A204A41700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A204A31700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		79A204CA170047C200E3F564 /* NSObject+PropertyListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A204C9170047C200E3F564 /* NSObject+PropertyListing.m */; };
+		79A204D017004F1400E3F564 /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79A204CF17004F1400E3F564 /* Defaults.plist */; };
 		79EDDA4916FF208300DFF0F3 /* module.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EDDA4616FF208300DFF0F3 /* module.m */; };
 		79EDDA4A16FF208300DFF0F3 /* PedometerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EDDA4816FF208300DFF0F3 /* PedometerViewController.m */; };
 		79EDDA6316FF45A200DFF0F3 /* DrinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EDDA6216FF45A200DFF0F3 /* DrinkViewController.m */; };
@@ -46,8 +49,13 @@
 		7969400516FDFA6300302DFA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7969400D16FE006200302DFA /* Role.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Role.h; sourceTree = "<group>"; };
 		7969400E16FE006200302DFA /* Role.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Role.m; sourceTree = "<group>"; };
-		7998C08C16FED27600411669 /* SportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportViewController.h; sourceTree = "<group>"; };
-		7998C08D16FED27600411669 /* SportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SportViewController.m; sourceTree = "<group>"; };
+		7998C08C16FED27600411669 /* HandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandViewController.h; sourceTree = "<group>"; };
+		7998C08D16FED27600411669 /* HandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandViewController.m; sourceTree = "<group>"; };
+		79A204A21700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+MPSecureUserDefaults.h"; sourceTree = "<group>"; };
+		79A204A31700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+MPSecureUserDefaults.m"; sourceTree = "<group>"; };
+		79A204C8170047C200E3F564 /* NSObject+PropertyListing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PropertyListing.h"; sourceTree = "<group>"; };
+		79A204C9170047C200E3F564 /* NSObject+PropertyListing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PropertyListing.m"; sourceTree = "<group>"; };
+		79A204CF17004F1400E3F564 /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Defaults.plist; sourceTree = "<group>"; };
 		79EDDA4416FF208300DFF0F3 /* module-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "module-Prefix.pch"; sourceTree = "<group>"; };
 		79EDDA4516FF208300DFF0F3 /* module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = module.h; sourceTree = "<group>"; };
 		79EDDA4616FF208300DFF0F3 /* module.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = module.m; sourceTree = "<group>"; };
@@ -125,6 +133,7 @@
 				79693FF816FDFA6300302DFA /* Default.png */,
 				79693FFA16FDFA6300302DFA /* Default@2x.png */,
 				79693FFC16FDFA6300302DFA /* Default-568h@2x.png */,
+				79A204CF17004F1400E3F564 /* Defaults.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -141,8 +150,8 @@
 		7998C08B16FED24100411669 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				7998C08C16FED27600411669 /* SportViewController.h */,
-				7998C08D16FED27600411669 /* SportViewController.m */,
+				7998C08C16FED27600411669 /* HandViewController.h */,
+				7998C08D16FED27600411669 /* HandViewController.m */,
 				79EDDA6116FF45A200DFF0F3 /* DrinkViewController.h */,
 				79EDDA6216FF45A200DFF0F3 /* DrinkViewController.m */,
 			);
@@ -152,6 +161,10 @@
 		79EDDA4316FF208300DFF0F3 /* module */ = {
 			isa = PBXGroup;
 			children = (
+				79A204C8170047C200E3F564 /* NSObject+PropertyListing.h */,
+				79A204C9170047C200E3F564 /* NSObject+PropertyListing.m */,
+				79A204A21700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.h */,
+				79A204A31700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.m */,
 				79EDDA4416FF208300DFF0F3 /* module-Prefix.pch */,
 				79EDDA4516FF208300DFF0F3 /* module.h */,
 				79EDDA4616FF208300DFF0F3 /* module.m */,
@@ -219,6 +232,7 @@
 				79693FFD16FDFA6300302DFA /* Default-568h@2x.png in Resources */,
 				7969400016FDFA6300302DFA /* MainStoryboard_iPhone.storyboard in Resources */,
 				7969400316FDFA6300302DFA /* MainStoryboard_iPad.storyboard in Resources */,
+				79A204D017004F1400E3F564 /* Defaults.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,10 +247,12 @@
 				79693FF716FDFA6300302DFA /* AppDelegate.m in Sources */,
 				7969400616FDFA6300302DFA /* ViewController.m in Sources */,
 				7969400F16FE006200302DFA /* Role.m in Sources */,
-				7998C08E16FED27600411669 /* SportViewController.m in Sources */,
+				7998C08E16FED27600411669 /* HandViewController.m in Sources */,
 				79EDDA4916FF208300DFF0F3 /* module.m in Sources */,
 				79EDDA4A16FF208300DFF0F3 /* PedometerViewController.m in Sources */,
 				79EDDA6316FF45A200DFF0F3 /* DrinkViewController.m in Sources */,
+				79A204A41700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.m in Sources */,
+				79A204CA170047C200E3F564 /* NSObject+PropertyListing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

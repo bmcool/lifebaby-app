@@ -6,7 +6,7 @@
 //  Copyright (c) 2013年 lifebaby. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "NSObject+PropertyListing.h"
 
 @interface Role : NSObject
 
@@ -25,5 +25,8 @@
 @property (assign, nonatomic) CGFloat satiety;
 
 + (id)sharedInstance;
+
+- (void) save;
+- (void) update;
 
 @end

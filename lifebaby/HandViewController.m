@@ -6,13 +6,15 @@
 //  Copyright (c) 2013年 lifebaby. All rights reserved.
 //
 
-#import "SportViewController.h"
+#import "HandViewController.h"
 
-@interface SportViewController ()
+#import "Role.h"
+
+@interface HandViewController ()
 
 @end
 
-@implementation SportViewController
+@implementation HandViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,14 +28,26 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+    [[Role sharedInstance] update];
+    
+    self.numSteps = [[Role sharedInstance] numSteps];
+	[self.numStepsLabel setText:[NSString stringWithFormat:@"%d", self.numSteps]];
+}
+
+-(void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    [[Role sharedInstance] save];
 }
 
 -(void) incrNumSteps
 {
     [super incrNumSteps];
+    
     [self.numStepsLabel setText:[NSString stringWithFormat:@"%d", self.numSteps]];
-    [self.numStepsLabel sizeToFit];
+    
+    [[Role sharedInstance] setNumSteps:self.numSteps];
 }
 
 - (void)didReceiveMemoryWarning

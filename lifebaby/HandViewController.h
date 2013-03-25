@@ -8,7 +8,7 @@
 
 #import "PedometerViewController.h"
 
-@interface SportViewController : PedometerViewController<PedometerDelegate>
+@interface HandViewController : PedometerViewController<PedometerDelegate>
 
 @property (strong, nonatomic) IBOutlet UILabel *numStepsLabel;
 
