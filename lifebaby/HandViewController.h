@@ -6,9 +6,9 @@
 //  Copyright (c) 2013年 lifebaby. All rights reserved.
 //
 
-#import "PedometerViewController.h"
+#import "ShakeViewController.h"
 
-@interface HandViewController : PedometerViewController<PedometerDelegate>
+@interface HandViewController : ShakeViewController<ShakeDelegate>
 
 @property (strong, nonatomic) IBOutlet UILabel *numStepsLabel;
 
