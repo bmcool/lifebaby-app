@@ -40,7 +40,7 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    [[Role sharedInstance] update];
+    [[Role sharedInstance] save];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

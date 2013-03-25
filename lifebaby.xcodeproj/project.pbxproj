@@ -20,6 +20,10 @@
 		7969400316FDFA6300302DFA /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7969400116FDFA6300302DFA /* MainStoryboard_iPad.storyboard */; };
 		7969400616FDFA6300302DFA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969400516FDFA6300302DFA /* ViewController.m */; };
 		7969400F16FE006200302DFA /* Role.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969400E16FE006200302DFA /* Role.m */; };
+		796F61BD1700DBCA0049576F /* MotionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 796F61BA1700DBCA0049576F /* MotionViewController.m */; };
+		796F61BE1700DBCA0049576F /* MoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 796F61BC1700DBCA0049576F /* MoveViewController.m */; };
+		796F61C11700DBE50049576F /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796F61C01700DBE40049576F /* CoreMotion.framework */; };
+		796F61C31700DBE90049576F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796F61C21700DBE90049576F /* CoreLocation.framework */; };
 		7998C08E16FED27600411669 /* HandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7998C08D16FED27600411669 /* HandViewController.m */; };
 		79A204A41700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A204A31700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		79A204CA170047C200E3F564 /* NSObject+PropertyListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A204C9170047C200E3F564 /* NSObject+PropertyListing.m */; };
@@ -49,6 +53,12 @@
 		7969400516FDFA6300302DFA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7969400D16FE006200302DFA /* Role.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Role.h; sourceTree = "<group>"; };
 		7969400E16FE006200302DFA /* Role.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Role.m; sourceTree = "<group>"; };
+		796F61B91700DBCA0049576F /* MotionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionViewController.h; sourceTree = "<group>"; };
+		796F61BA1700DBCA0049576F /* MotionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionViewController.m; sourceTree = "<group>"; };
+		796F61BB1700DBCA0049576F /* MoveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveViewController.h; sourceTree = "<group>"; };
+		796F61BC1700DBCA0049576F /* MoveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveViewController.m; sourceTree = "<group>"; };
+		796F61C01700DBE40049576F /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		796F61C21700DBE90049576F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7998C08C16FED27600411669 /* HandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandViewController.h; sourceTree = "<group>"; };
 		7998C08D16FED27600411669 /* HandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandViewController.m; sourceTree = "<group>"; };
 		79A204A21700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+MPSecureUserDefaults.h"; sourceTree = "<group>"; };
@@ -70,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				796F61C31700DBE90049576F /* CoreLocation.framework in Frameworks */,
+				796F61C11700DBE50049576F /* CoreMotion.framework in Frameworks */,
 				79693FE716FDFA6300302DFA /* UIKit.framework in Frameworks */,
 				79693FE916FDFA6300302DFA /* Foundation.framework in Frameworks */,
 				79693FEB16FDFA6300302DFA /* CoreGraphics.framework in Frameworks */,
@@ -100,6 +112,8 @@
 		79693FE516FDFA6300302DFA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				796F61C21700DBE90049576F /* CoreLocation.framework */,
+				796F61C01700DBE40049576F /* CoreMotion.framework */,
 				79693FE616FDFA6300302DFA /* UIKit.framework */,
 				79693FE816FDFA6300302DFA /* Foundation.framework */,
 				79693FEA16FDFA6300302DFA /* CoreGraphics.framework */,
@@ -161,6 +175,10 @@
 		79EDDA4316FF208300DFF0F3 /* module */ = {
 			isa = PBXGroup;
 			children = (
+				796F61B91700DBCA0049576F /* MotionViewController.h */,
+				796F61BA1700DBCA0049576F /* MotionViewController.m */,
+				796F61BB1700DBCA0049576F /* MoveViewController.h */,
+				796F61BC1700DBCA0049576F /* MoveViewController.m */,
 				79A204E217006C2900E3F564 /* ShakeViewController.h */,
 				79A204E317006C2900E3F564 /* ShakeViewController.m */,
 				79A204C8170047C200E3F564 /* NSObject+PropertyListing.h */,
@@ -253,6 +271,8 @@
 				79A204A41700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.m in Sources */,
 				79A204CA170047C200E3F564 /* NSObject+PropertyListing.m in Sources */,
 				79A204E417006C2900E3F564 /* ShakeViewController.m in Sources */,
+				796F61BD1700DBCA0049576F /* MotionViewController.m in Sources */,
+				796F61BE1700DBCA0049576F /* MoveViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
