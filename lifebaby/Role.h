@@ -11,6 +11,7 @@
 @interface Role : NSObject
 
 @property (assign, nonatomic) NSInteger numSteps;
+@property (assign, nonatomic) CGFloat distance;
 
 @property (assign, nonatomic) CGFloat temperament;
 @property (assign, nonatomic) CGFloat intelligence;

@@ -29,6 +29,7 @@
 		79A204CA170047C200E3F564 /* NSObject+PropertyListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A204C9170047C200E3F564 /* NSObject+PropertyListing.m */; };
 		79A204D017004F1400E3F564 /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79A204CF17004F1400E3F564 /* Defaults.plist */; };
 		79A204E417006C2900E3F564 /* ShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A204E317006C2900E3F564 /* ShakeViewController.m */; };
+		79E1BC801701B70100FD8CC1 /* RunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1BC7F1701B70100FD8CC1 /* RunViewController.m */; };
 		79EDDA4916FF208300DFF0F3 /* module.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EDDA4616FF208300DFF0F3 /* module.m */; };
 		79EDDA6316FF45A200DFF0F3 /* DrinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EDDA6216FF45A200DFF0F3 /* DrinkViewController.m */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,8 @@
 		79A204CF17004F1400E3F564 /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Defaults.plist; sourceTree = "<group>"; };
 		79A204E217006C2900E3F564 /* ShakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeViewController.h; sourceTree = "<group>"; };
 		79A204E317006C2900E3F564 /* ShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeViewController.m; sourceTree = "<group>"; };
+		79E1BC7E1701B70100FD8CC1 /* RunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunViewController.h; sourceTree = "<group>"; };
+		79E1BC7F1701B70100FD8CC1 /* RunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunViewController.m; sourceTree = "<group>"; };
 		79EDDA4416FF208300DFF0F3 /* module-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "module-Prefix.pch"; sourceTree = "<group>"; };
 		79EDDA4516FF208300DFF0F3 /* module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = module.h; sourceTree = "<group>"; };
 		79EDDA4616FF208300DFF0F3 /* module.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = module.m; sourceTree = "<group>"; };
@@ -164,12 +167,22 @@
 		7998C08B16FED24100411669 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				7998C08C16FED27600411669 /* HandViewController.h */,
-				7998C08D16FED27600411669 /* HandViewController.m */,
+				79E1BC7C1701B6DE00FD8CC1 /* SportViewControllers */,
 				79EDDA6116FF45A200DFF0F3 /* DrinkViewController.h */,
 				79EDDA6216FF45A200DFF0F3 /* DrinkViewController.m */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		79E1BC7C1701B6DE00FD8CC1 /* SportViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7998C08C16FED27600411669 /* HandViewController.h */,
+				7998C08D16FED27600411669 /* HandViewController.m */,
+				79E1BC7E1701B70100FD8CC1 /* RunViewController.h */,
+				79E1BC7F1701B70100FD8CC1 /* RunViewController.m */,
+			);
+			name = SportViewControllers;
 			sourceTree = "<group>";
 		};
 		79EDDA4316FF208300DFF0F3 /* module */ = {
@@ -273,6 +286,7 @@
 				79A204E417006C2900E3F564 /* ShakeViewController.m in Sources */,
 				796F61BD1700DBCA0049576F /* MotionViewController.m in Sources */,
 				796F61BE1700DBCA0049576F /* MoveViewController.m in Sources */,
+				79E1BC801701B70100FD8CC1 /* RunViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
