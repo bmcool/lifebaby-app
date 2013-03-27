@@ -38,6 +38,7 @@
 -(void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
+        
     [[Role sharedInstance] save];
 }
 

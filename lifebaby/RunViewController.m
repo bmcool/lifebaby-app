@@ -10,6 +10,8 @@
 
 #import "Role.h"
 
+#define kMAX_SPEED 5.0
+
 @interface RunViewController ()
 
 @end
@@ -25,13 +27,27 @@
     return self;
 }
 
-- (void)locationUpdate:(CLLocation *)location distance:(CLLocationDistance)distance
+- (void)locationUpdate:(CLLocation *)location distance:(CLLocationDistance)distance timeInterval:(NSTimeInterval)timeInterval
 {
-    [self.speedLabel setText:[NSString stringWithFormat:@"%.2f", location.speed]];
+    NSString *speedText;
     
-    NSLog(@"d1=%.2f, d2=%.2f", [[Role sharedInstance] distance], distance);
+    if (location.speed > kMAX_SPEED) {
+        speedText = [NSString stringWithFormat:@"%.1f (MAX)", kMAX_SPEED];
+    } else {
+        speedText = [NSString stringWithFormat:@"%.1f", location.speed];
+    }
+    
+    [self.speedLabel setText:speedText];
+    
+    distance = MIN(distance, kMAX_SPEED * timeInterval);
+    
     [[Role sharedInstance] setDistance:([[Role sharedInstance] distance] + distance)];
-    [self.distanceLabel setText:[NSString stringWithFormat:@"%.2f", [[Role sharedInstance] distance]]];
+    [self.distanceLabel setText:[NSString stringWithFormat:@"%.1f", [[Role sharedInstance] distance]]];
+}
+
+-(void) locationLongTimeNoUpdate
+{
+    [self.speedLabel setText:@"0"];
 }
 
 - (void)viewDidLoad
@@ -40,7 +56,7 @@
     
 	[[Role sharedInstance] update];
     
-	[self.distanceLabel setText:[NSString stringWithFormat:@"%.2f", [[Role sharedInstance] distance]]];
+	[self.distanceLabel setText:[NSString stringWithFormat:@"%.1f", [[Role sharedInstance] distance]]];
 }
 
 -(void)viewDidDisappear:(BOOL)animated

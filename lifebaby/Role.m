@@ -35,6 +35,7 @@ static NSString *_roleId;
 
 -(void) setRoleId:(NSString *)roleId
 {
+    [self save];
     _roleId = roleId;
     [self update];
 }
