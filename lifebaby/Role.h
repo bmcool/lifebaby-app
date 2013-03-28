@@ -8,9 +8,24 @@
 
 #import "NSObject+PropertyListing.h"
 
+#import "DrinkItem.h"
+#import "FoodItem.h"
+
+@class Role;
+@protocol RoleDelegate<NSObject>
+
+@optional
+- (void)role:(Role *)role attributeChangeWithItem:(BaseItem *)item;
+
+@end
+
 @interface Role : NSObject
 
-@property (assign, nonatomic) NSInteger numSteps;
+@property (strong, nonatomic) NSDate *lastExpendDate;
+@property (strong, nonatomic) NSDate *lastDrinkDate;
+@property (strong, nonatomic) NSDate *lastFoodDate;
+
+@property (assign, nonatomic) NSInteger shakeCount;
 @property (assign, nonatomic) CGFloat distance;
 
 @property (assign, nonatomic) CGFloat temperament;
@@ -25,9 +40,23 @@
 @property (assign, nonatomic) CGFloat moisture;
 @property (assign, nonatomic) CGFloat satiety;
 
+@property (weak, nonatomic) id<RoleDelegate> delegate;
+
 + (id)sharedInstance;
 
-- (void) save;
-- (void) update;
+- (void)save;
+- (void)update;
+
+- (void)growWithItem:(BaseItem *)item;
+
+- (void)growWithDrinkItem:(DrinkItem *)item;
+- (void)growWithFoodItem:(FoodItem *)item;
+- (BOOL)isCanDrink;
+- (BOOL)isCanFood;
+- (NSTimeInterval)getDrinkCoolDownTime;
+- (NSTimeInterval)getFoodCoolDownTime;
+
+
+
 
 @end

@@ -10,6 +10,6 @@
 
 @interface HandViewController : ShakeViewController<ShakeDelegate>
 
-@property (weak, nonatomic) IBOutlet UILabel *numStepsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *shakeCountLabel;
 
 @end

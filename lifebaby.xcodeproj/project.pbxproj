@@ -30,6 +30,13 @@
 		797F65A81703642E00D01C5B /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = 797F65A21703642E00D01C5B /* Station.m */; };
 		797F65A91703642E00D01C5B /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 797F65A41703642E00D01C5B /* Weather.m */; };
 		797F65AD1703689500D01C5B /* RoleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 797F65AC1703689500D01C5B /* RoleViewController.m */; };
+		798269231703EB0800A6268E /* BaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 798269221703EB0800A6268E /* BaseItem.m */; };
+		798269281703EE2B00A6268E /* diet.png in Resources */ = {isa = PBXBuildFile; fileRef = 798269271703EE2B00A6268E /* diet.png */; };
+		7982692C1703FBD200A6268E /* WaterItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7982692B1703FBD200A6268E /* WaterItem.m */; };
+		7982694317042A6200A6268E /* RegularItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7982694217042A6200A6268E /* RegularItem.m */; };
+		798269491704364000A6268E /* RoleInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 798269481704364000A6268E /* RoleInfoView.m */; };
+		7982698B170498B900A6268E /* DrinkItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7982698A170498B900A6268E /* DrinkItem.m */; };
+		7982698F17049AA000A6268E /* FoodItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7982698E17049AA000A6268E /* FoodItem.m */; };
 		7998C08E16FED27600411669 /* HandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7998C08D16FED27600411669 /* HandViewController.m */; };
 		79A204A41700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A204A31700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		79A204CA170047C200E3F564 /* NSObject+PropertyListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A204C9170047C200E3F564 /* NSObject+PropertyListing.m */; };
@@ -78,6 +85,19 @@
 		797F65A41703642E00D01C5B /* Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
 		797F65AB1703689500D01C5B /* RoleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoleViewController.h; sourceTree = "<group>"; };
 		797F65AC1703689500D01C5B /* RoleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoleViewController.m; sourceTree = "<group>"; };
+		798269211703EB0800A6268E /* BaseItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseItem.h; sourceTree = "<group>"; };
+		798269221703EB0800A6268E /* BaseItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseItem.m; sourceTree = "<group>"; };
+		798269271703EE2B00A6268E /* diet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diet.png; sourceTree = "<group>"; };
+		7982692A1703FBD200A6268E /* WaterItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterItem.h; sourceTree = "<group>"; };
+		7982692B1703FBD200A6268E /* WaterItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterItem.m; sourceTree = "<group>"; };
+		7982694117042A6200A6268E /* RegularItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegularItem.h; sourceTree = "<group>"; };
+		7982694217042A6200A6268E /* RegularItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegularItem.m; sourceTree = "<group>"; };
+		798269471704364000A6268E /* RoleInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoleInfoView.h; sourceTree = "<group>"; };
+		798269481704364000A6268E /* RoleInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoleInfoView.m; sourceTree = "<group>"; };
+		79826989170498B900A6268E /* DrinkItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkItem.h; sourceTree = "<group>"; };
+		7982698A170498B900A6268E /* DrinkItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkItem.m; sourceTree = "<group>"; };
+		7982698D17049AA000A6268E /* FoodItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodItem.h; sourceTree = "<group>"; };
+		7982698E17049AA000A6268E /* FoodItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodItem.m; sourceTree = "<group>"; };
 		7998C08C16FED27600411669 /* HandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandViewController.h; sourceTree = "<group>"; };
 		7998C08D16FED27600411669 /* HandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandViewController.m; sourceTree = "<group>"; };
 		79A204A21700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+MPSecureUserDefaults.h"; sourceTree = "<group>"; };
@@ -145,8 +165,10 @@
 		79693FEC16FDFA6300302DFA /* lifebaby */ = {
 			isa = PBXGroup;
 			children = (
+				798269461704361F00A6268E /* Views */,
 				7998C08B16FED24100411669 /* ViewControllers */,
 				7969400C16FE002800302DFA /* Models */,
+				798269261703EE2B00A6268E /* Resources */,
 				79693FF516FDFA6300302DFA /* AppDelegate.h */,
 				79693FF616FDFA6300302DFA /* AppDelegate.m */,
 				79693FFE16FDFA6300302DFA /* MainStoryboard_iPhone.storyboard */,
@@ -176,10 +198,61 @@
 		7969400C16FE002800302DFA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				798269251703EB3500A6268E /* Items */,
 				7969400D16FE006200302DFA /* Role.h */,
 				7969400E16FE006200302DFA /* Role.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		798269251703EB3500A6268E /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				7982698C17049A8700A6268E /* FoodItems */,
+				798269881704989B00A6268E /* DrinkItems */,
+				798269211703EB0800A6268E /* BaseItem.h */,
+				798269221703EB0800A6268E /* BaseItem.m */,
+				7982694117042A6200A6268E /* RegularItem.h */,
+				7982694217042A6200A6268E /* RegularItem.m */,
+			);
+			name = Items;
+			sourceTree = "<group>";
+		};
+		798269261703EE2B00A6268E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				798269271703EE2B00A6268E /* diet.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		798269461704361F00A6268E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				798269471704364000A6268E /* RoleInfoView.h */,
+				798269481704364000A6268E /* RoleInfoView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		798269881704989B00A6268E /* DrinkItems */ = {
+			isa = PBXGroup;
+			children = (
+				7982692A1703FBD200A6268E /* WaterItem.h */,
+				7982692B1703FBD200A6268E /* WaterItem.m */,
+				79826989170498B900A6268E /* DrinkItem.h */,
+				7982698A170498B900A6268E /* DrinkItem.m */,
+			);
+			name = DrinkItems;
+			sourceTree = "<group>";
+		};
+		7982698C17049A8700A6268E /* FoodItems */ = {
+			isa = PBXGroup;
+			children = (
+				7982698D17049AA000A6268E /* FoodItem.h */,
+				7982698E17049AA000A6268E /* FoodItem.m */,
+			);
+			name = FoodItems;
 			sourceTree = "<group>";
 		};
 		7998C08B16FED24100411669 /* ViewControllers */ = {
@@ -294,6 +367,7 @@
 				7969400016FDFA6300302DFA /* MainStoryboard_iPhone.storyboard in Resources */,
 				7969400316FDFA6300302DFA /* MainStoryboard_iPad.storyboard in Resources */,
 				79A204D017004F1400E3F564 /* Defaults.plist in Resources */,
+				798269281703EE2B00A6268E /* diet.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +397,12 @@
 				797F65A81703642E00D01C5B /* Station.m in Sources */,
 				797F65A91703642E00D01C5B /* Weather.m in Sources */,
 				797F65AD1703689500D01C5B /* RoleViewController.m in Sources */,
+				798269231703EB0800A6268E /* BaseItem.m in Sources */,
+				7982692C1703FBD200A6268E /* WaterItem.m in Sources */,
+				7982694317042A6200A6268E /* RegularItem.m in Sources */,
+				798269491704364000A6268E /* RoleInfoView.m in Sources */,
+				7982698B170498B900A6268E /* DrinkItem.m in Sources */,
+				7982698F17049AA000A6268E /* FoodItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

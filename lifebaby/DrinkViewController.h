@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#import "RoleInfoView.h"
+
 @interface DrinkViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UILabel *coolDownLabel;
+@property (weak, nonatomic) IBOutlet RoleInfoView *roleInfoView;
 
 @end

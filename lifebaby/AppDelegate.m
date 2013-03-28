@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 
-#import "NSUserDefaults+MPSecureUserDefaults.h"
 #import "Role.h"
 #import "OpenWeatherMap.h"
 
@@ -18,9 +17,7 @@
 {
     // init weather data
     [OpenWeatherMap sharedInstance];
-    
-    [NSUserDefaults setSecret:@"abcdefghijklmnopqrstuvwxyz"];
-    
+        
     [[NSUserDefaults standardUserDefaults] registerDefaults:[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Defaults" ofType:@"plist"]]];
     
     

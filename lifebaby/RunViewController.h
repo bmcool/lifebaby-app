@@ -8,9 +8,12 @@
 
 #import "MoveViewController.h"
 
-@interface RunViewController : MoveViewController<MoveDelegate>
+@interface RunViewController : MoveViewController<MoveDelegate> {
+    CGFloat theDistance;
+}
 
 @property (weak, nonatomic) IBOutlet UILabel *speedLabel;
 @property (weak, nonatomic) IBOutlet UILabel *distanceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *totalDistanceLabel;
 
 @end

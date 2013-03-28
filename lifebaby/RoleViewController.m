@@ -27,6 +27,8 @@
 {
     [super viewDidLoad];
     
+    role = [Role sharedInstance];
+    
     openWeatherMap = [OpenWeatherMap sharedInstance];
     
     [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateTime) userInfo:nil repeats:YES];
@@ -53,4 +55,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidUnload {
+    [self setRoleInfoView:nil];
+    [super viewDidUnload];
+}
 @end

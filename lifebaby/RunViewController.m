@@ -42,12 +42,16 @@
     distance = MIN(distance, kMAX_SPEED * timeInterval);
     
     [[Role sharedInstance] setDistance:([[Role sharedInstance] distance] + distance)];
-    [self.distanceLabel setText:[NSString stringWithFormat:@"%.1f", [[Role sharedInstance] distance]]];
+    [self.totalDistanceLabel setText:[NSString stringWithFormat:@"%.1f", [[Role sharedInstance] distance]]];
+    
+    theDistance = theDistance + distance;
+    [self.distanceLabel setText:[NSString stringWithFormat:@"%.1f", theDistance]];
+    
 }
 
 -(void) locationLongTimeNoUpdate
 {
-    [self.speedLabel setText:@"0"];
+    [self.speedLabel setText:@"0.0"];
 }
 
 - (void)viewDidLoad
@@ -56,7 +60,8 @@
     
 	[[Role sharedInstance] update];
     
-	[self.distanceLabel setText:[NSString stringWithFormat:@"%.1f", [[Role sharedInstance] distance]]];
+	[self.totalDistanceLabel setText:[NSString stringWithFormat:@"%.1f", [[Role sharedInstance] distance]]];
+    [self.distanceLabel setText:[NSString stringWithFormat:@"%.1f", theDistance]];
 }
 
 -(void)viewDidDisappear:(BOOL)animated

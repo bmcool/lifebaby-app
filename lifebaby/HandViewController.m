@@ -31,8 +31,8 @@
     
     [[Role sharedInstance] update];
     
-    self.numSteps = [[Role sharedInstance] numSteps];
-	[self.numStepsLabel setText:[NSString stringWithFormat:@"%d", self.numSteps]];
+    self.shakeCount = [[Role sharedInstance] shakeCount];
+	[self.shakeCountLabel setText:[NSString stringWithFormat:@"%d", self.shakeCount]];
 }
 
 -(void)viewDidDisappear:(BOOL)animated
@@ -42,13 +42,13 @@
     [[Role sharedInstance] save];
 }
 
--(void) incrNumSteps
+-(void) incrShakeCount
 {
-    [super incrNumSteps];
+    [super incrShakeCount];
     
-    [self.numStepsLabel setText:[NSString stringWithFormat:@"%d", self.numSteps]];
+    [self.shakeCountLabel setText:[NSString stringWithFormat:@"%d", self.shakeCount]];
     
-    [[Role sharedInstance] setNumSteps:self.numSteps];
+    [[Role sharedInstance] setShakeCount:self.shakeCount];
 }
 
 - (void)didReceiveMemoryWarning
