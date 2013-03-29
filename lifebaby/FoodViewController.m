@@ -1,20 +1,20 @@
 //
-//  DrinkViewController.m
+//  FoodViewController.m
 //  lifebaby
 //
-//  Created by Lin Chi-Cheng on 13/3/24.
+//  Created by Lin Chi-Cheng on 13/3/29.
 //  Copyright (c) 2013年 lifebaby. All rights reserved.
 //
 
-#import "DrinkViewController.h"
+#import "FoodViewController.h"
 
-#import "WaterItem.h"
+#import "BeefItem.h"
 
-@interface DrinkViewController ()
+@interface FoodViewController ()
 
 @end
 
-@implementation DrinkViewController
+@implementation FoodViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,19 +28,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	// Do any additional setup after loading the view.
 }
 
 - (void)updateCooldown
 {
-    NSTimeInterval timeInterval = [[Role sharedInstance] getDrinkCoolDownTime];
+    NSTimeInterval timeInterval = [[Role sharedInstance] getFoodCoolDownTime];
     
     [self updateCooldownWithTimeInterval:timeInterval];
 }
 
-- (IBAction)drinkWater:(id)sender
+- (IBAction)FoodBeef:(id)sender
 {
     [self.view setButtonsEnable:NO];
-    [[Role sharedInstance] growWithDrinkItem:[WaterItem new]];
+    [[Role sharedInstance] growWithFoodItem:[BeefItem new]];
 }
 
 - (void)didReceiveMemoryWarning

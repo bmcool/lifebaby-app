@@ -12,16 +12,10 @@
 
 @implementation RoleInfoView
 
-- (id)initWithCoder:(NSCoder *)aDecoder
+-(void) awakeFromNib
 {
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(initLabels) userInfo:nil repeats:YES];
-        
-        // label is nil before view controller did load...
-        [self performSelector:@selector(initLabels) withObject:nil afterDelay:0.0];
-    }
-    return self;
+    [self initLabels];
+    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(initLabels) userInfo:nil repeats:YES];
 }
 
 - (void) initLabels
@@ -33,14 +27,5 @@
     [self.weightLabel setText:[NSString stringWithFormat:@"%.1f", role.weight]];
     [self.satietyLabel setText:[NSString stringWithFormat:@"%.1f", role.satiety]];
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
 
 @end

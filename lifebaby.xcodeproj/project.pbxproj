@@ -42,6 +42,16 @@
 		79A204CA170047C200E3F564 /* NSObject+PropertyListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A204C9170047C200E3F564 /* NSObject+PropertyListing.m */; };
 		79A204D017004F1400E3F564 /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79A204CF17004F1400E3F564 /* Defaults.plist */; };
 		79A204E417006C2900E3F564 /* ShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A204E317006C2900E3F564 /* ShakeViewController.m */; };
+		79CA72B917058E0B0077AB51 /* FoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CA72B817058E0B0077AB51 /* FoodViewController.m */; };
+		79CA72CA17058FE00077AB51 /* NSArray+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CA72C717058FE00077AB51 /* NSArray+Addition.m */; };
+		79CA72CB17058FE00077AB51 /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CA72C917058FE00077AB51 /* UIView+Addition.m */; };
+		79CA72D6170597A10077AB51 /* CooldownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CA72D5170597A10077AB51 /* CooldownViewController.m */; };
+		79CA74351705E6800077AB51 /* RoleInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79CA74341705E6800077AB51 /* RoleInfoView.xib */; };
+		79CA743C1705E75B0077AB51 /* MethodSwizzle.c in Sources */ = {isa = PBXBuildFile; fileRef = 79CA74361705E75A0077AB51 /* MethodSwizzle.c */; };
+		79CA743D1705E75B0077AB51 /* NSObject+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CA74391705E75A0077AB51 /* NSObject+Swizzle.m */; };
+		79CA743E1705E75B0077AB51 /* UIViewController+StoryboardExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CA743B1705E75A0077AB51 /* UIViewController+StoryboardExtend.m */; };
+		79CA74411705EFC80077AB51 /* RoleInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CA74401705EFC70077AB51 /* RoleInfoViewController.m */; };
+		79CA74441705F6EA0077AB51 /* BeefItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CA74431705F6EA0077AB51 /* BeefItem.m */; };
 		79E1BC801701B70100FD8CC1 /* RunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1BC7F1701B70100FD8CC1 /* RunViewController.m */; };
 		79EDDA4916FF208300DFF0F3 /* module.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EDDA4616FF208300DFF0F3 /* module.m */; };
 		79EDDA6316FF45A200DFF0F3 /* DrinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EDDA6216FF45A200DFF0F3 /* DrinkViewController.m */; };
@@ -107,6 +117,25 @@
 		79A204CF17004F1400E3F564 /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Defaults.plist; sourceTree = "<group>"; };
 		79A204E217006C2900E3F564 /* ShakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeViewController.h; sourceTree = "<group>"; };
 		79A204E317006C2900E3F564 /* ShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeViewController.m; sourceTree = "<group>"; };
+		79CA72B717058E0B0077AB51 /* FoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodViewController.h; sourceTree = "<group>"; };
+		79CA72B817058E0B0077AB51 /* FoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodViewController.m; sourceTree = "<group>"; };
+		79CA72C617058FE00077AB51 /* NSArray+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Addition.h"; sourceTree = "<group>"; };
+		79CA72C717058FE00077AB51 /* NSArray+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Addition.m"; sourceTree = "<group>"; };
+		79CA72C817058FE00077AB51 /* UIView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Addition.h"; sourceTree = "<group>"; };
+		79CA72C917058FE00077AB51 /* UIView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addition.m"; sourceTree = "<group>"; };
+		79CA72D4170597A10077AB51 /* CooldownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CooldownViewController.h; sourceTree = "<group>"; };
+		79CA72D5170597A10077AB51 /* CooldownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CooldownViewController.m; sourceTree = "<group>"; };
+		79CA74341705E6800077AB51 /* RoleInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoleInfoView.xib; sourceTree = "<group>"; };
+		79CA74361705E75A0077AB51 /* MethodSwizzle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MethodSwizzle.c; sourceTree = "<group>"; };
+		79CA74371705E75A0077AB51 /* MethodSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodSwizzle.h; sourceTree = "<group>"; };
+		79CA74381705E75A0077AB51 /* NSObject+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzle.h"; sourceTree = "<group>"; };
+		79CA74391705E75A0077AB51 /* NSObject+Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzle.m"; sourceTree = "<group>"; };
+		79CA743A1705E75A0077AB51 /* UIViewController+StoryboardExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+StoryboardExtend.h"; sourceTree = "<group>"; };
+		79CA743B1705E75A0077AB51 /* UIViewController+StoryboardExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+StoryboardExtend.m"; sourceTree = "<group>"; };
+		79CA743F1705EFC70077AB51 /* RoleInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoleInfoViewController.h; sourceTree = "<group>"; };
+		79CA74401705EFC70077AB51 /* RoleInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoleInfoViewController.m; sourceTree = "<group>"; };
+		79CA74421705F6EA0077AB51 /* BeefItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeefItem.h; sourceTree = "<group>"; };
+		79CA74431705F6EA0077AB51 /* BeefItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeefItem.m; sourceTree = "<group>"; };
 		79E1BC7E1701B70100FD8CC1 /* RunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunViewController.h; sourceTree = "<group>"; };
 		79E1BC7F1701B70100FD8CC1 /* RunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunViewController.m; sourceTree = "<group>"; };
 		79EDDA4416FF208300DFF0F3 /* module-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "module-Prefix.pch"; sourceTree = "<group>"; };
@@ -231,6 +260,7 @@
 			children = (
 				798269471704364000A6268E /* RoleInfoView.h */,
 				798269481704364000A6268E /* RoleInfoView.m */,
+				79CA74341705E6800077AB51 /* RoleInfoView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -251,6 +281,8 @@
 			children = (
 				7982698D17049AA000A6268E /* FoodItem.h */,
 				7982698E17049AA000A6268E /* FoodItem.m */,
+				79CA74421705F6EA0077AB51 /* BeefItem.h */,
+				79CA74431705F6EA0077AB51 /* BeefItem.m */,
 			);
 			name = FoodItems;
 			sourceTree = "<group>";
@@ -258,13 +290,27 @@
 		7998C08B16FED24100411669 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				79CA72D3170597740077AB51 /* DietViewControllers */,
 				79E1BC7C1701B6DE00FD8CC1 /* SportViewControllers */,
-				79EDDA6116FF45A200DFF0F3 /* DrinkViewController.h */,
-				79EDDA6216FF45A200DFF0F3 /* DrinkViewController.m */,
 				797F65AB1703689500D01C5B /* RoleViewController.h */,
 				797F65AC1703689500D01C5B /* RoleViewController.m */,
+				79CA743F1705EFC70077AB51 /* RoleInfoViewController.h */,
+				79CA74401705EFC70077AB51 /* RoleInfoViewController.m */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		79CA72D3170597740077AB51 /* DietViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				79EDDA6116FF45A200DFF0F3 /* DrinkViewController.h */,
+				79EDDA6216FF45A200DFF0F3 /* DrinkViewController.m */,
+				79CA72B717058E0B0077AB51 /* FoodViewController.h */,
+				79CA72B817058E0B0077AB51 /* FoodViewController.m */,
+				79CA72D4170597A10077AB51 /* CooldownViewController.h */,
+				79CA72D5170597A10077AB51 /* CooldownViewController.m */,
+			);
+			name = DietViewControllers;
 			sourceTree = "<group>";
 		};
 		79E1BC7C1701B6DE00FD8CC1 /* SportViewControllers */ = {
@@ -281,6 +327,16 @@
 		79EDDA4316FF208300DFF0F3 /* module */ = {
 			isa = PBXGroup;
 			children = (
+				79CA74361705E75A0077AB51 /* MethodSwizzle.c */,
+				79CA74371705E75A0077AB51 /* MethodSwizzle.h */,
+				79CA74381705E75A0077AB51 /* NSObject+Swizzle.h */,
+				79CA74391705E75A0077AB51 /* NSObject+Swizzle.m */,
+				79CA743A1705E75A0077AB51 /* UIViewController+StoryboardExtend.h */,
+				79CA743B1705E75A0077AB51 /* UIViewController+StoryboardExtend.m */,
+				79CA72C617058FE00077AB51 /* NSArray+Addition.h */,
+				79CA72C717058FE00077AB51 /* NSArray+Addition.m */,
+				79CA72C817058FE00077AB51 /* UIView+Addition.h */,
+				79CA72C917058FE00077AB51 /* UIView+Addition.m */,
 				797F659B1703642E00D01C5B /* Http.h */,
 				797F659C1703642E00D01C5B /* Http.m */,
 				797F659D1703642E00D01C5B /* JSONKit.h */,
@@ -368,6 +424,7 @@
 				7969400316FDFA6300302DFA /* MainStoryboard_iPad.storyboard in Resources */,
 				79A204D017004F1400E3F564 /* Defaults.plist in Resources */,
 				798269281703EE2B00A6268E /* diet.png in Resources */,
+				79CA74351705E6800077AB51 /* RoleInfoView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +460,15 @@
 				798269491704364000A6268E /* RoleInfoView.m in Sources */,
 				7982698B170498B900A6268E /* DrinkItem.m in Sources */,
 				7982698F17049AA000A6268E /* FoodItem.m in Sources */,
+				79CA72B917058E0B0077AB51 /* FoodViewController.m in Sources */,
+				79CA72CA17058FE00077AB51 /* NSArray+Addition.m in Sources */,
+				79CA72CB17058FE00077AB51 /* UIView+Addition.m in Sources */,
+				79CA72D6170597A10077AB51 /* CooldownViewController.m in Sources */,
+				79CA743C1705E75B0077AB51 /* MethodSwizzle.c in Sources */,
+				79CA743D1705E75B0077AB51 /* NSObject+Swizzle.m in Sources */,
+				79CA743E1705E75B0077AB51 /* UIViewController+StoryboardExtend.m in Sources */,
+				79CA74411705EFC80077AB51 /* RoleInfoViewController.m in Sources */,
+				79CA74441705F6EA0077AB51 /* BeefItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

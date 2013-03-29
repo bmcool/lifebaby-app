@@ -1,8 +1,8 @@
 //
-//  DrinkViewController.h
+//  FoodViewController.h
 //  lifebaby
 //
-//  Created by Lin Chi-Cheng on 13/3/24.
+//  Created by Lin Chi-Cheng on 13/3/29.
 //  Copyright (c) 2013年 lifebaby. All rights reserved.
 //
 
@@ -10,6 +10,6 @@
 
 #import "CooldownViewController.h"
 
-@interface DrinkViewController : CooldownViewController
+@interface FoodViewController : CooldownViewController
 
 @end

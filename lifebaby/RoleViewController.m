@@ -7,6 +7,7 @@
 //
 
 #import "RoleViewController.h"
+#import "UIViewController+StoryboardExtend.h"
 
 @interface RoleViewController ()
 
@@ -55,8 +56,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)viewDidUnload {
-    [self setRoleInfoView:nil];
-    [super viewDidUnload];
-}
 @end

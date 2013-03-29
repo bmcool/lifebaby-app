@@ -1,20 +1,20 @@
 //
-//  DrinkViewController.m
+//  RoleInfoViewController.m
 //  lifebaby
 //
-//  Created by Lin Chi-Cheng on 13/3/24.
+//  Created by Lin Chi-Cheng on 13/3/29.
 //  Copyright (c) 2013年 lifebaby. All rights reserved.
 //
 
-#import "DrinkViewController.h"
+#import "RoleInfoViewController.h"
 
-#import "WaterItem.h"
+#import "UIViewController+StoryboardExtend.h"
 
-@interface DrinkViewController ()
+@interface RoleInfoViewController ()
 
 @end
 
-@implementation DrinkViewController
+@implementation RoleInfoViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,19 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-}
-
-- (void)updateCooldown
-{
-    NSTimeInterval timeInterval = [[Role sharedInstance] getDrinkCoolDownTime];
-    
-    [self updateCooldownWithTimeInterval:timeInterval];
-}
-
-- (IBAction)drinkWater:(id)sender
-{
-    [self.view setButtonsEnable:NO];
-    [[Role sharedInstance] growWithDrinkItem:[WaterItem new]];
+	[self storyboardXibViewToXib];
 }
 
 - (void)didReceiveMemoryWarning

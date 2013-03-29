@@ -17,7 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	[self.startButton.titleLabel setFont:[UIFont fontWithName:@"Zapfino" size:15]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,4 +26,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidUnload {
+    [self setStartButton:nil];
+    [super viewDidUnload];
+}
 @end
