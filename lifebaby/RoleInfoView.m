@@ -14,8 +14,10 @@
 
 -(void) awakeFromNib
 {
-    [self initLabels];
-    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(initLabels) userInfo:nil repeats:YES];
+    if (self.superview == nil) {
+        [self initLabels];
+        [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(initLabels) userInfo:nil repeats:YES];
+    }
 }
 
 - (void) initLabels

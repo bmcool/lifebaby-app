@@ -6,15 +6,17 @@
 //  Copyright (c) 2013年 lifebaby. All rights reserved.
 //
 
-#import "HandViewController.h"
+#import "PedometerViewController.h"
 
 #import "Role.h"
 
-@interface HandViewController ()
+#import "UIViewController+Stop.h"
+
+@interface PedometerViewController ()
 
 @end
 
-@implementation HandViewController
+@implementation PedometerViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,18 +30,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    [[Role sharedInstance] update];
-    
+        
     self.shakeCount = [[Role sharedInstance] shakeCount];
 	[self.shakeCountLabel setText:[NSString stringWithFormat:@"%d", self.shakeCount]];
-}
-
--(void)viewDidDisappear:(BOOL)animated
-{
-    [super viewDidDisappear:animated];
-        
-    [[Role sharedInstance] save];
 }
 
 -(void) incrShakeCount

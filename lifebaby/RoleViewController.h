@@ -14,9 +14,9 @@
 
 #import "Role.h"
 
-#import "RoleInfoViewController.h"
+#import "UIViewController+RoleInfo.h"
 
-@interface RoleViewController : RoleInfoViewController {
+@interface RoleViewController : UIViewController {
     OpenWeatherMap *openWeatherMap;
     
     Role *role;

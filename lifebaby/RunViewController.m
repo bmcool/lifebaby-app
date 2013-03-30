@@ -51,23 +51,15 @@
 
 -(void) locationLongTimeNoUpdate
 {
-    [self.speedLabel setText:@"0.0"];
+    [self.speedLabel setText:@"GPS is too weak"];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-	[[Role sharedInstance] update];
-    
+        
 	[self.totalDistanceLabel setText:[NSString stringWithFormat:@"%.1f", [[Role sharedInstance] distance]]];
     [self.distanceLabel setText:[NSString stringWithFormat:@"%.1f", theDistance]];
-}
-
--(void)viewDidDisappear:(BOOL)animated
-{
-    [super viewDidDisappear:animated];
-    [[Role sharedInstance] save];
 }
 
 - (void)didReceiveMemoryWarning

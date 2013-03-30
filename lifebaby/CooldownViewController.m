@@ -31,9 +31,10 @@
     
 }
 
-- (void)updateCooldown
+- (NSTimeInterval)getCooldownTime
 {
-    NSLog(@"Not Implemented %s", __PRETTY_FUNCTION__);
+    NSAssert(NO, @"Not Implemented %s", __PRETTY_FUNCTION__);
+    return 0;
 }
 
 -(void) viewDidAppear:(BOOL)animated
@@ -50,8 +51,10 @@
     [coolCooldownTimer invalidate];
 }
 
-- (void)updateCooldownWithTimeInterval:(NSTimeInterval)timeInterval
+- (void)updateCooldown
 {
+    NSTimeInterval timeInterval = [self getCooldownTime];
+    
     if (timeInterval <= 0) {
         timeInterval = 0;
         [self.view setButtonsEnable:YES];

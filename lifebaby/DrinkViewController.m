@@ -30,11 +30,9 @@
     [super viewDidLoad];
 }
 
-- (void)updateCooldown
+- (NSTimeInterval)getCooldownTime
 {
-    NSTimeInterval timeInterval = [[Role sharedInstance] getDrinkCoolDownTime];
-    
-    [self updateCooldownWithTimeInterval:timeInterval];
+    return [[Role sharedInstance] getDrinkCoolDownTime];
 }
 
 - (IBAction)drinkWater:(id)sender

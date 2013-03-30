@@ -8,7 +8,7 @@
 
 #import "ShakeViewController.h"
 
-@interface HandViewController : ShakeViewController<ShakeDelegate>
+@interface PedometerViewController : ShakeViewController<ShakeDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *shakeCountLabel;
 

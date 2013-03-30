@@ -24,6 +24,11 @@
 		796F61BE1700DBCA0049576F /* MoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 796F61BC1700DBCA0049576F /* MoveViewController.m */; };
 		796F61C11700DBE50049576F /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796F61C01700DBE40049576F /* CoreMotion.framework */; };
 		796F61C31700DBE90049576F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796F61C21700DBE90049576F /* CoreLocation.framework */; };
+		797A51271706D94D0072DD9B /* UIViewController+Stop.m in Sources */ = {isa = PBXBuildFile; fileRef = 797A51261706D94D0072DD9B /* UIViewController+Stop.m */; };
+		797A51301706EED90072DD9B /* UIViewController+ImpStoryboardExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 797A512F1706EED90072DD9B /* UIViewController+ImpStoryboardExtend.m */; };
+		797A51331706F2980072DD9B /* UIViewController+RoleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 797A51321706F2980072DD9B /* UIViewController+RoleInfo.m */; };
+		797A5136170732E10072DD9B /* TimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 797A5135170732E10072DD9B /* TimeView.m */; };
+		797A5138170732F30072DD9B /* TimeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 797A5137170732F30072DD9B /* TimeView.xib */; };
 		797F65A51703642E00D01C5B /* Http.m in Sources */ = {isa = PBXBuildFile; fileRef = 797F659C1703642E00D01C5B /* Http.m */; };
 		797F65A61703642E00D01C5B /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 797F659E1703642E00D01C5B /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		797F65A71703642E00D01C5B /* OpenWeatherMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 797F65A01703642E00D01C5B /* OpenWeatherMap.m */; };
@@ -37,7 +42,7 @@
 		798269491704364000A6268E /* RoleInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 798269481704364000A6268E /* RoleInfoView.m */; };
 		7982698B170498B900A6268E /* DrinkItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7982698A170498B900A6268E /* DrinkItem.m */; };
 		7982698F17049AA000A6268E /* FoodItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7982698E17049AA000A6268E /* FoodItem.m */; };
-		7998C08E16FED27600411669 /* HandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7998C08D16FED27600411669 /* HandViewController.m */; };
+		7998C08E16FED27600411669 /* PedometerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7998C08D16FED27600411669 /* PedometerViewController.m */; };
 		79A204A41700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A204A31700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		79A204CA170047C200E3F564 /* NSObject+PropertyListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A204C9170047C200E3F564 /* NSObject+PropertyListing.m */; };
 		79A204D017004F1400E3F564 /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79A204CF17004F1400E3F564 /* Defaults.plist */; };
@@ -50,7 +55,6 @@
 		79CA743C1705E75B0077AB51 /* MethodSwizzle.c in Sources */ = {isa = PBXBuildFile; fileRef = 79CA74361705E75A0077AB51 /* MethodSwizzle.c */; };
 		79CA743D1705E75B0077AB51 /* NSObject+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CA74391705E75A0077AB51 /* NSObject+Swizzle.m */; };
 		79CA743E1705E75B0077AB51 /* UIViewController+StoryboardExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CA743B1705E75A0077AB51 /* UIViewController+StoryboardExtend.m */; };
-		79CA74411705EFC80077AB51 /* RoleInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CA74401705EFC70077AB51 /* RoleInfoViewController.m */; };
 		79CA74441705F6EA0077AB51 /* BeefItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CA74431705F6EA0077AB51 /* BeefItem.m */; };
 		79E1BC801701B70100FD8CC1 /* RunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1BC7F1701B70100FD8CC1 /* RunViewController.m */; };
 		79EDDA4916FF208300DFF0F3 /* module.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EDDA4616FF208300DFF0F3 /* module.m */; };
@@ -83,6 +87,15 @@
 		796F61BC1700DBCA0049576F /* MoveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveViewController.m; sourceTree = "<group>"; };
 		796F61C01700DBE40049576F /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		796F61C21700DBE90049576F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		797A51251706D94D0072DD9B /* UIViewController+Stop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Stop.h"; sourceTree = "<group>"; };
+		797A51261706D94D0072DD9B /* UIViewController+Stop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Stop.m"; sourceTree = "<group>"; };
+		797A512E1706EED90072DD9B /* UIViewController+ImpStoryboardExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ImpStoryboardExtend.h"; sourceTree = "<group>"; };
+		797A512F1706EED90072DD9B /* UIViewController+ImpStoryboardExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ImpStoryboardExtend.m"; sourceTree = "<group>"; };
+		797A51311706F2980072DD9B /* UIViewController+RoleInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RoleInfo.h"; sourceTree = "<group>"; };
+		797A51321706F2980072DD9B /* UIViewController+RoleInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RoleInfo.m"; sourceTree = "<group>"; };
+		797A5134170732E10072DD9B /* TimeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeView.h; sourceTree = "<group>"; };
+		797A5135170732E10072DD9B /* TimeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeView.m; sourceTree = "<group>"; };
+		797A5137170732F30072DD9B /* TimeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeView.xib; sourceTree = "<group>"; };
 		797F659B1703642E00D01C5B /* Http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Http.h; sourceTree = "<group>"; };
 		797F659C1703642E00D01C5B /* Http.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Http.m; sourceTree = "<group>"; };
 		797F659D1703642E00D01C5B /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
@@ -108,8 +121,8 @@
 		7982698A170498B900A6268E /* DrinkItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkItem.m; sourceTree = "<group>"; };
 		7982698D17049AA000A6268E /* FoodItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodItem.h; sourceTree = "<group>"; };
 		7982698E17049AA000A6268E /* FoodItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodItem.m; sourceTree = "<group>"; };
-		7998C08C16FED27600411669 /* HandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandViewController.h; sourceTree = "<group>"; };
-		7998C08D16FED27600411669 /* HandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandViewController.m; sourceTree = "<group>"; };
+		7998C08C16FED27600411669 /* PedometerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PedometerViewController.h; sourceTree = "<group>"; };
+		7998C08D16FED27600411669 /* PedometerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PedometerViewController.m; sourceTree = "<group>"; };
 		79A204A21700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+MPSecureUserDefaults.h"; sourceTree = "<group>"; };
 		79A204A31700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+MPSecureUserDefaults.m"; sourceTree = "<group>"; };
 		79A204C8170047C200E3F564 /* NSObject+PropertyListing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PropertyListing.h"; sourceTree = "<group>"; };
@@ -132,8 +145,6 @@
 		79CA74391705E75A0077AB51 /* NSObject+Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzle.m"; sourceTree = "<group>"; };
 		79CA743A1705E75A0077AB51 /* UIViewController+StoryboardExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+StoryboardExtend.h"; sourceTree = "<group>"; };
 		79CA743B1705E75A0077AB51 /* UIViewController+StoryboardExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+StoryboardExtend.m"; sourceTree = "<group>"; };
-		79CA743F1705EFC70077AB51 /* RoleInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoleInfoViewController.h; sourceTree = "<group>"; };
-		79CA74401705EFC70077AB51 /* RoleInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoleInfoViewController.m; sourceTree = "<group>"; };
 		79CA74421705F6EA0077AB51 /* BeefItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeefItem.h; sourceTree = "<group>"; };
 		79CA74431705F6EA0077AB51 /* BeefItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeefItem.m; sourceTree = "<group>"; };
 		79E1BC7E1701B70100FD8CC1 /* RunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunViewController.h; sourceTree = "<group>"; };
@@ -234,6 +245,23 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		797A51291706DEA10072DD9B /* RoleViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				79CA72D3170597740077AB51 /* DietViewControllers */,
+				79E1BC7C1701B6DE00FD8CC1 /* SportViewControllers */,
+				797F65AB1703689500D01C5B /* RoleViewController.h */,
+				797F65AC1703689500D01C5B /* RoleViewController.m */,
+				797A51251706D94D0072DD9B /* UIViewController+Stop.h */,
+				797A51261706D94D0072DD9B /* UIViewController+Stop.m */,
+				797A512E1706EED90072DD9B /* UIViewController+ImpStoryboardExtend.h */,
+				797A512F1706EED90072DD9B /* UIViewController+ImpStoryboardExtend.m */,
+				797A51311706F2980072DD9B /* UIViewController+RoleInfo.h */,
+				797A51321706F2980072DD9B /* UIViewController+RoleInfo.m */,
+			);
+			name = RoleViewControllers;
+			sourceTree = "<group>";
+		};
 		798269251703EB3500A6268E /* Items */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +289,9 @@
 				798269471704364000A6268E /* RoleInfoView.h */,
 				798269481704364000A6268E /* RoleInfoView.m */,
 				79CA74341705E6800077AB51 /* RoleInfoView.xib */,
+				797A5134170732E10072DD9B /* TimeView.h */,
+				797A5135170732E10072DD9B /* TimeView.m */,
+				797A5137170732F30072DD9B /* TimeView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -290,12 +321,7 @@
 		7998C08B16FED24100411669 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				79CA72D3170597740077AB51 /* DietViewControllers */,
-				79E1BC7C1701B6DE00FD8CC1 /* SportViewControllers */,
-				797F65AB1703689500D01C5B /* RoleViewController.h */,
-				797F65AC1703689500D01C5B /* RoleViewController.m */,
-				79CA743F1705EFC70077AB51 /* RoleInfoViewController.h */,
-				79CA74401705EFC70077AB51 /* RoleInfoViewController.m */,
+				797A51291706DEA10072DD9B /* RoleViewControllers */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -316,8 +342,8 @@
 		79E1BC7C1701B6DE00FD8CC1 /* SportViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				7998C08C16FED27600411669 /* HandViewController.h */,
-				7998C08D16FED27600411669 /* HandViewController.m */,
+				7998C08C16FED27600411669 /* PedometerViewController.h */,
+				7998C08D16FED27600411669 /* PedometerViewController.m */,
 				79E1BC7E1701B70100FD8CC1 /* RunViewController.h */,
 				79E1BC7F1701B70100FD8CC1 /* RunViewController.m */,
 			);
@@ -425,6 +451,7 @@
 				79A204D017004F1400E3F564 /* Defaults.plist in Resources */,
 				798269281703EE2B00A6268E /* diet.png in Resources */,
 				79CA74351705E6800077AB51 /* RoleInfoView.xib in Resources */,
+				797A5138170732F30072DD9B /* TimeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +466,7 @@
 				79693FF716FDFA6300302DFA /* AppDelegate.m in Sources */,
 				7969400616FDFA6300302DFA /* ViewController.m in Sources */,
 				7969400F16FE006200302DFA /* Role.m in Sources */,
-				7998C08E16FED27600411669 /* HandViewController.m in Sources */,
+				7998C08E16FED27600411669 /* PedometerViewController.m in Sources */,
 				79EDDA4916FF208300DFF0F3 /* module.m in Sources */,
 				79EDDA6316FF45A200DFF0F3 /* DrinkViewController.m in Sources */,
 				79A204A41700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.m in Sources */,
@@ -467,8 +494,11 @@
 				79CA743C1705E75B0077AB51 /* MethodSwizzle.c in Sources */,
 				79CA743D1705E75B0077AB51 /* NSObject+Swizzle.m in Sources */,
 				79CA743E1705E75B0077AB51 /* UIViewController+StoryboardExtend.m in Sources */,
-				79CA74411705EFC80077AB51 /* RoleInfoViewController.m in Sources */,
 				79CA74441705F6EA0077AB51 /* BeefItem.m in Sources */,
+				797A51271706D94D0072DD9B /* UIViewController+Stop.m in Sources */,
+				797A51301706EED90072DD9B /* UIViewController+ImpStoryboardExtend.m in Sources */,
+				797A51331706F2980072DD9B /* UIViewController+RoleInfo.m in Sources */,
+				797A5136170732E10072DD9B /* TimeView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -31,11 +31,9 @@
 	// Do any additional setup after loading the view.
 }
 
-- (void)updateCooldown
+- (NSTimeInterval)getCooldownTime
 {
-    NSTimeInterval timeInterval = [[Role sharedInstance] getFoodCoolDownTime];
-    
-    [self updateCooldownWithTimeInterval:timeInterval];
+    return [[Role sharedInstance] getFoodCoolDownTime];
 }
 
 - (IBAction)FoodBeef:(id)sender

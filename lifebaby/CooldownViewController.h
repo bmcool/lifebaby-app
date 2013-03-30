@@ -7,17 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RoleInfoViewController.h"
+#import "UIViewController+RoleInfo.h"
 #import "UIView+Addition.h"
 #import "Role.h"
 
-@interface CooldownViewController : RoleInfoViewController {
+@interface CooldownViewController : UIViewController {
     NSTimer *coolCooldownTimer;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *cooldownLabel;
 
-- (void)updateCooldown;
-- (void)updateCooldownWithTimeInterval:(NSTimeInterval)timeInterval;
+- (NSTimeInterval)getCooldownTime;
 
 @end

@@ -17,10 +17,9 @@
 {
     // init weather data
     [OpenWeatherMap sharedInstance];
-        
+    [[Role sharedInstance] update];
+    
     [[NSUserDefaults standardUserDefaults] registerDefaults:[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Defaults" ofType:@"plist"]]];
-    
-    
     
     return YES;
 }
