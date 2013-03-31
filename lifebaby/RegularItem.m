@@ -14,7 +14,8 @@
 {
     self = [super init];
     if (self) {
-        CGFloat mul = timeInterval / 60.0;
+//        CGFloat mul = timeInterval / 60.0;
+        CGFloat mul = timeInterval / 10.0;
         
         self.moisture = -0.1 * mul;
         self.satiety = -0.1  * mul;

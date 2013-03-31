@@ -8,11 +8,29 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TimeView : UIView {
-    NSDate *startTime;
-}
+typedef NS_ENUM(NSInteger, TimeType) {
+    TimeType24Hour,
+    TimeTypeStopwatch
+};
+
+@interface TimeView : UIView
+
+@property (assign, nonatomic) TimeType timeType;
 
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeTextLabel;
+
+- (void) startStopwatch;
+- (void) pauseStopwatch;
+
+@end
+
+@interface _TimeView : TimeView {
+    NSTimer *timer;
+    
+    NSDate *startTime;
+    NSInteger tmpStopwatch;
+    BOOL isStopwatchRunning;
+}
 
 @end

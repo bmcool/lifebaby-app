@@ -14,11 +14,11 @@
 {
     self = [super init];
     if (self) {
-        self.moisture = 10;
-        self.satiety = 30;
+        self.moisture = 0.1;
+        self.satiety = 0.5;
         
         self.toxin = -10;
-        self.fatigue = -5;
+        self.fatigue = -1;
     }
     return self;
 }

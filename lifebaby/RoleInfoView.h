@@ -8,15 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RoleInfoView : UIView {
-    NSTimer *timer;
-}
+@interface RoleInfoView : UIView
 
 @property (weak, nonatomic) IBOutlet UILabel *weightLabel;
 @property (weak, nonatomic) IBOutlet UILabel *moistureLabel;
 @property (weak, nonatomic) IBOutlet UILabel *fatigueLabel;
 @property (weak, nonatomic) IBOutlet UILabel *satietyLabel;
 
-- (void)initLabels;
+@end
+
+@interface _RoleInfoView : RoleInfoView
 
 @end

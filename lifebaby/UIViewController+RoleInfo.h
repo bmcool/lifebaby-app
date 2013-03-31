@@ -10,6 +10,6 @@
 
 @interface UIViewController (RoleInfo)
 
-@property (strong, nonatomic) IBOutlet RoleInfoView *roleInfoView;
+@property (weak, nonatomic) IBOutlet RoleInfoView *roleInfoView;
 
 @end

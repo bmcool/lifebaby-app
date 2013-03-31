@@ -47,7 +47,7 @@ static NSString *_roleId;
         [self save];
         
         [self regularExpend];
-        [NSTimer scheduledTimerWithTimeInterval:60.0 target:self selector:@selector(regularExpend) userInfo:nil repeats:YES];
+        [NSTimer scheduledTimerWithTimeInterval:10.0 target:self selector:@selector(regularExpend) userInfo:nil repeats:YES];
     }
     return self;
 }
@@ -158,6 +158,7 @@ static NSString *_roleId;
     
     [self save];
     
+    [[NSNotificationCenter defaultCenter] postNotificationName:EventRoleAttributeChanged object:nil];
     [self.delegate role:self attributeChangeWithItem:item];
 }
 

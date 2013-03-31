@@ -57,9 +57,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-        
+    
+    self.timeView.timeType = TimeTypeStopwatch;
+    
 	[self.totalDistanceLabel setText:[NSString stringWithFormat:@"%.1f", [[Role sharedInstance] distance]]];
     [self.distanceLabel setText:[NSString stringWithFormat:@"%.1f", theDistance]];
+}
+
+- (IBAction)start:(id)sender
+{
+    [self.timeView startStopwatch];
+}
+
+- (IBAction)pause:(id)sender
+{
+    [self.timeView pauseStopwatch];
 }
 
 - (void)didReceiveMemoryWarning

@@ -30,7 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-        
+    
     self.shakeCount = [[Role sharedInstance] shakeCount];
 	[self.shakeCountLabel setText:[NSString stringWithFormat:@"%d", self.shakeCount]];
 }

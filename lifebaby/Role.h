@@ -11,6 +11,8 @@
 #import "DrinkItem.h"
 #import "FoodItem.h"
 
+#define EventRoleAttributeChanged @"EventRoleAttributeChanged"
+
 @class Role;
 @protocol RoleDelegate<NSObject>
 

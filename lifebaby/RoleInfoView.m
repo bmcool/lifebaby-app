@@ -11,16 +11,16 @@
 #import "Role.h"
 
 @implementation RoleInfoView
+@end
+
+@implementation _RoleInfoView
 
 -(void) awakeFromNib
 {
-    if (self.superview == nil) {
-        [self initLabels];
-        [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(initLabels) userInfo:nil repeats:YES];
-    }
+    
 }
 
-- (void) initLabels
+- (void) updateLabels
 {
     Role *role = [Role sharedInstance];
     
@@ -28,6 +28,17 @@
     [self.moistureLabel setText:[NSString stringWithFormat:@"%.1f", role.moisture]];
     [self.weightLabel setText:[NSString stringWithFormat:@"%.1f", role.weight]];
     [self.satietyLabel setText:[NSString stringWithFormat:@"%.1f", role.satiety]];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self updateLabels];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateLabels) name:EventRoleAttributeChanged object:nil];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end

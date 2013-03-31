@@ -8,7 +8,8 @@
 
 #import "BaseItem.h"
 
-#define FoodCD 3600.0*3
+//#define FoodCD 3600.0*3
+#define FoodCD 10
 
 @interface FoodItem : BaseItem
 

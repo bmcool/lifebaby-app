@@ -7,7 +7,10 @@
 //
 
 #import "MoveViewController.h"
-#import "TimeView.h"
+#import "UIViewController+RoleInfo.h"
+
+#import "UIViewController+TimeView.h"
+
 @interface RunViewController : MoveViewController<MoveDelegate> {
     CGFloat theDistance;
 }

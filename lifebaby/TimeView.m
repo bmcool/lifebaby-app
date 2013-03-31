@@ -10,35 +10,80 @@
 
 @implementation TimeView
 
+-(void) startStopwatch{}
+-(void) pauseStopwatch{}
+
+@end
+
+@implementation _TimeView
+
 - (void)awakeFromNib
 {
-    if (self.superview == nil) {
-        startTime = [NSDate date];
-        
-        NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateTime:) userInfo:nil repeats:YES];
-        [self updateTime:timer];
+    
+}
+
+- (void)setTimeType:(TimeType)timeType
+{
+    if (self.timeType != TimeTypeStopwatch && timeType == TimeTypeStopwatch) {
+        [self.timeLabel setText:@"00:00:00"];
+    }
+    [super setTimeType:timeType];
+}
+
+- (void) updateTime
+{
+    if (self.timeType == TimeType24Hour) {
+        [self.timeLabel setText:[self get24HourFormatTime]];
+    } else if (self.timeType == TimeTypeStopwatch) {        
+        if (isStopwatchRunning) {
+            [self.timeLabel setText:[self getStopwatchFormatTime]];
+        }
     }
 }
 
-- (void) updateTime:(NSTimer *)timer
+- (void)viewWillAppear:(BOOL)animated
 {
-    [self.timeLabel setText:[self getFormatTime]];
+    [self updateTime];
+    timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateTime) userInfo:nil repeats:YES];
 }
 
-- (NSString *)getFormatTime
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [timer invalidate];
+    timer = nil;
+}
+
+- (NSString *)get24HourFormatTime
+{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"HH:mm:ss"];
+    
+    NSString *timeString = [dateFormatter stringFromDate:[NSDate date]];
+    return timeString;
+}
+
+- (NSString *)getStopwatchFormatTime
 {	
 	NSDate *currentDate = [NSDate date];
-    NSTimeInterval timeInterval = [currentDate timeIntervalSinceDate:startTime];
-    NSDate *timerDate = [NSDate dateWithTimeIntervalSince1970:timeInterval];
+    tmpStopwatch = [currentDate timeIntervalSinceDate:startTime];
+    NSDate *timerDate = [NSDate dateWithTimeIntervalSince1970:tmpStopwatch];
     
-    // Create a date formatter
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"HH:mm:ss"];
     [dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0.0]];
     
-    // Format the elapsed time and set it to the label
     NSString *timeString = [dateFormatter stringFromDate:timerDate];
     return timeString;
+}
+
+-(void) startStopwatch
+{
+    startTime = [NSDate dateWithTimeIntervalSinceNow:-tmpStopwatch];
+    isStopwatchRunning = YES;
+}
+-(void) pauseStopwatch
+{
+    isStopwatchRunning = NO;
 }
 
 @end

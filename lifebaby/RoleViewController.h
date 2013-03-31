@@ -15,11 +15,10 @@
 #import "Role.h"
 
 #import "UIViewController+RoleInfo.h"
+#import "UIViewController+TimeView.h"
 
 @interface RoleViewController : UIViewController {
     OpenWeatherMap *openWeatherMap;
-    
-    Role *role;
 }
 
 @property (weak, nonatomic) IBOutlet UIImageView *weatherIconImageView;

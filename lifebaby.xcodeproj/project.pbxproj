@@ -42,6 +42,7 @@
 		798269491704364000A6268E /* RoleInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 798269481704364000A6268E /* RoleInfoView.m */; };
 		7982698B170498B900A6268E /* DrinkItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7982698A170498B900A6268E /* DrinkItem.m */; };
 		7982698F17049AA000A6268E /* FoodItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7982698E17049AA000A6268E /* FoodItem.m */; };
+		798552981707DA47007A24BE /* UIViewController+TimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 798552971707DA46007A24BE /* UIViewController+TimeView.m */; };
 		7998C08E16FED27600411669 /* PedometerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7998C08D16FED27600411669 /* PedometerViewController.m */; };
 		79A204A41700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A204A31700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		79A204CA170047C200E3F564 /* NSObject+PropertyListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A204C9170047C200E3F564 /* NSObject+PropertyListing.m */; };
@@ -121,6 +122,8 @@
 		7982698A170498B900A6268E /* DrinkItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkItem.m; sourceTree = "<group>"; };
 		7982698D17049AA000A6268E /* FoodItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodItem.h; sourceTree = "<group>"; };
 		7982698E17049AA000A6268E /* FoodItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodItem.m; sourceTree = "<group>"; };
+		798552961707DA46007A24BE /* UIViewController+TimeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TimeView.h"; sourceTree = "<group>"; };
+		798552971707DA46007A24BE /* UIViewController+TimeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TimeView.m"; sourceTree = "<group>"; };
 		7998C08C16FED27600411669 /* PedometerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PedometerViewController.h; sourceTree = "<group>"; };
 		7998C08D16FED27600411669 /* PedometerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PedometerViewController.m; sourceTree = "<group>"; };
 		79A204A21700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+MPSecureUserDefaults.h"; sourceTree = "<group>"; };
@@ -256,8 +259,6 @@
 				797A51261706D94D0072DD9B /* UIViewController+Stop.m */,
 				797A512E1706EED90072DD9B /* UIViewController+ImpStoryboardExtend.h */,
 				797A512F1706EED90072DD9B /* UIViewController+ImpStoryboardExtend.m */,
-				797A51311706F2980072DD9B /* UIViewController+RoleInfo.h */,
-				797A51321706F2980072DD9B /* UIViewController+RoleInfo.m */,
 			);
 			name = RoleViewControllers;
 			sourceTree = "<group>";
@@ -289,9 +290,13 @@
 				798269471704364000A6268E /* RoleInfoView.h */,
 				798269481704364000A6268E /* RoleInfoView.m */,
 				79CA74341705E6800077AB51 /* RoleInfoView.xib */,
+				797A51311706F2980072DD9B /* UIViewController+RoleInfo.h */,
+				797A51321706F2980072DD9B /* UIViewController+RoleInfo.m */,
 				797A5134170732E10072DD9B /* TimeView.h */,
 				797A5135170732E10072DD9B /* TimeView.m */,
 				797A5137170732F30072DD9B /* TimeView.xib */,
+				798552961707DA46007A24BE /* UIViewController+TimeView.h */,
+				798552971707DA46007A24BE /* UIViewController+TimeView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -499,6 +504,7 @@
 				797A51301706EED90072DD9B /* UIViewController+ImpStoryboardExtend.m in Sources */,
 				797A51331706F2980072DD9B /* UIViewController+RoleInfo.m in Sources */,
 				797A5136170732E10072DD9B /* TimeView.m in Sources */,
+				798552981707DA47007A24BE /* UIViewController+TimeView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

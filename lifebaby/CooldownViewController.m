@@ -26,9 +26,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-	[self.view setButtonsEnable:NO];
-    
+	
+    [self.view setButtonsEnable:NO];
+    [self updateCooldown];
 }
 
 - (NSTimeInterval)getCooldownTime

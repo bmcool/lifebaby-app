@@ -27,8 +27,7 @@
 {
     [super viewDidLoad];
     
-    role = [Role sharedInstance];
-    
+    self.timeView.timeType = TimeType24Hour;
     openWeatherMap = [OpenWeatherMap sharedInstance];
     
     [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateTime) userInfo:nil repeats:YES];

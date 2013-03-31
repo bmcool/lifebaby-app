@@ -8,7 +8,8 @@
 
 #import "BaseItem.h"
 
-#define DrinkCD 3600.0
+//#define DrinkCD 3600.0
+#define DrinkCD 5
 
 @interface DrinkItem : BaseItem
 
