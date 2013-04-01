@@ -26,6 +26,8 @@
 {
     if (self.timeType != TimeTypeStopwatch && timeType == TimeTypeStopwatch) {
         [self.timeLabel setText:@"00:00:00"];
+        stopTime = [NSDate date];
+        startTime = [NSDate date];
     }
     [super setTimeType:timeType];
 }
@@ -65,8 +67,8 @@
 - (NSString *)getStopwatchFormatTime
 {	
 	NSDate *currentDate = [NSDate date];
-    tmpStopwatch = [currentDate timeIntervalSinceDate:startTime];
-    NSDate *timerDate = [NSDate dateWithTimeIntervalSince1970:tmpStopwatch];
+    NSTimeInterval timeInterval = [currentDate timeIntervalSinceDate:startTime];
+    NSDate *timerDate = [NSDate dateWithTimeIntervalSince1970:timeInterval];
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"HH:mm:ss"];
@@ -78,12 +80,18 @@
 
 -(void) startStopwatch
 {
-    startTime = [NSDate dateWithTimeIntervalSinceNow:-tmpStopwatch];
-    isStopwatchRunning = YES;
+    if (!isStopwatchRunning) {
+        startTime = [NSDate dateWithTimeIntervalSinceNow:[startTime timeIntervalSinceDate:stopTime]];
+        isStopwatchRunning = YES;
+        [self updateTime];
+    }
 }
 -(void) pauseStopwatch
 {
-    isStopwatchRunning = NO;
+    if (isStopwatchRunning) {
+        stopTime = [NSDate date];
+        isStopwatchRunning = NO;
+    }
 }
 
 @end

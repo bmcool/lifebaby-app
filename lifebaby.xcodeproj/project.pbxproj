@@ -175,6 +175,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7941B0BA170966B200D18F2E /* RoleInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				798269471704364000A6268E /* RoleInfoView.h */,
+				798269481704364000A6268E /* RoleInfoView.m */,
+				79CA74341705E6800077AB51 /* RoleInfoView.xib */,
+				797A51311706F2980072DD9B /* UIViewController+RoleInfo.h */,
+				797A51321706F2980072DD9B /* UIViewController+RoleInfo.m */,
+			);
+			name = RoleInfoView;
+			sourceTree = "<group>";
+		};
+		7941B0BC170966C200D18F2E /* TimeView */ = {
+			isa = PBXGroup;
+			children = (
+				797A5134170732E10072DD9B /* TimeView.h */,
+				797A5135170732E10072DD9B /* TimeView.m */,
+				797A5137170732F30072DD9B /* TimeView.xib */,
+				798552961707DA46007A24BE /* UIViewController+TimeView.h */,
+				798552971707DA46007A24BE /* UIViewController+TimeView.m */,
+			);
+			name = TimeView;
+			sourceTree = "<group>";
+		};
 		79693FD716FDFA6300302DFA = {
 			isa = PBXGroup;
 			children = (
@@ -287,16 +311,8 @@
 		798269461704361F00A6268E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				798269471704364000A6268E /* RoleInfoView.h */,
-				798269481704364000A6268E /* RoleInfoView.m */,
-				79CA74341705E6800077AB51 /* RoleInfoView.xib */,
-				797A51311706F2980072DD9B /* UIViewController+RoleInfo.h */,
-				797A51321706F2980072DD9B /* UIViewController+RoleInfo.m */,
-				797A5134170732E10072DD9B /* TimeView.h */,
-				797A5135170732E10072DD9B /* TimeView.m */,
-				797A5137170732F30072DD9B /* TimeView.xib */,
-				798552961707DA46007A24BE /* UIViewController+TimeView.h */,
-				798552971707DA46007A24BE /* UIViewController+TimeView.m */,
+				7941B0BC170966C200D18F2E /* TimeView */,
+				7941B0BA170966B200D18F2E /* RoleInfoView */,
 			);
 			name = Views;
 			sourceTree = "<group>";

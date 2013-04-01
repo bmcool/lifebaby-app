@@ -29,7 +29,7 @@ typedef NS_ENUM(NSInteger, TimeType) {
     NSTimer *timer;
     
     NSDate *startTime;
-    NSInteger tmpStopwatch;
+    NSDate *stopTime;
     BOOL isStopwatchRunning;
 }
 
