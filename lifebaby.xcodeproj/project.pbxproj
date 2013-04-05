@@ -20,20 +20,28 @@
 		7969400316FDFA6300302DFA /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7969400116FDFA6300302DFA /* MainStoryboard_iPad.storyboard */; };
 		7969400616FDFA6300302DFA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969400516FDFA6300302DFA /* ViewController.m */; };
 		7969400F16FE006200302DFA /* Role.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969400E16FE006200302DFA /* Role.m */; };
-		796F61BD1700DBCA0049576F /* MotionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 796F61BA1700DBCA0049576F /* MotionViewController.m */; };
-		796F61BE1700DBCA0049576F /* MoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 796F61BC1700DBCA0049576F /* MoveViewController.m */; };
+		7969FA5C170D6013005224DE /* Http.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969FA3C170D6013005224DE /* Http.m */; };
+		7969FA5D170D6013005224DE /* ios_module.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969FA3F170D6013005224DE /* ios_module.m */; };
+		7969FA5E170D6013005224DE /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969FA41170D6013005224DE /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7969FA5F170D6013005224DE /* MethodSwizzle.c in Sources */ = {isa = PBXBuildFile; fileRef = 7969FA42170D6013005224DE /* MethodSwizzle.c */; };
+		7969FA60170D6013005224DE /* MotionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969FA45170D6013005224DE /* MotionViewController.m */; };
+		7969FA61170D6013005224DE /* MoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969FA47170D6013005224DE /* MoveViewController.m */; };
+		7969FA62170D6013005224DE /* NSArray+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969FA49170D6013005224DE /* NSArray+Addition.m */; };
+		7969FA63170D6013005224DE /* NSObject+PropertyListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969FA4B170D6013005224DE /* NSObject+PropertyListing.m */; };
+		7969FA64170D6013005224DE /* NSObject+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969FA4D170D6013005224DE /* NSObject+Swizzle.m */; };
+		7969FA65170D6013005224DE /* NSUserDefaults+MPSecureUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969FA4F170D6013005224DE /* NSUserDefaults+MPSecureUserDefaults.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7969FA66170D6013005224DE /* OpenWeatherMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969FA51170D6013005224DE /* OpenWeatherMap.m */; };
+		7969FA67170D6013005224DE /* ShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969FA53170D6013005224DE /* ShakeViewController.m */; };
+		7969FA68170D6013005224DE /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969FA55170D6013005224DE /* Station.m */; };
+		7969FA69170D6013005224DE /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969FA57170D6013005224DE /* UIView+Addition.m */; };
+		7969FA6A170D6013005224DE /* UIViewController+StoryboardExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969FA59170D6013005224DE /* UIViewController+StoryboardExtend.m */; };
+		7969FA6B170D6013005224DE /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969FA5B170D6013005224DE /* Weather.m */; };
 		796F61C11700DBE50049576F /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796F61C01700DBE40049576F /* CoreMotion.framework */; };
 		796F61C31700DBE90049576F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796F61C21700DBE90049576F /* CoreLocation.framework */; };
 		797A51271706D94D0072DD9B /* UIViewController+Stop.m in Sources */ = {isa = PBXBuildFile; fileRef = 797A51261706D94D0072DD9B /* UIViewController+Stop.m */; };
-		797A51301706EED90072DD9B /* UIViewController+ImpStoryboardExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 797A512F1706EED90072DD9B /* UIViewController+ImpStoryboardExtend.m */; };
 		797A51331706F2980072DD9B /* UIViewController+RoleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 797A51321706F2980072DD9B /* UIViewController+RoleInfo.m */; };
 		797A5136170732E10072DD9B /* TimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 797A5135170732E10072DD9B /* TimeView.m */; };
 		797A5138170732F30072DD9B /* TimeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 797A5137170732F30072DD9B /* TimeView.xib */; };
-		797F65A51703642E00D01C5B /* Http.m in Sources */ = {isa = PBXBuildFile; fileRef = 797F659C1703642E00D01C5B /* Http.m */; };
-		797F65A61703642E00D01C5B /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 797F659E1703642E00D01C5B /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		797F65A71703642E00D01C5B /* OpenWeatherMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 797F65A01703642E00D01C5B /* OpenWeatherMap.m */; };
-		797F65A81703642E00D01C5B /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = 797F65A21703642E00D01C5B /* Station.m */; };
-		797F65A91703642E00D01C5B /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 797F65A41703642E00D01C5B /* Weather.m */; };
 		797F65AD1703689500D01C5B /* RoleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 797F65AC1703689500D01C5B /* RoleViewController.m */; };
 		798269231703EB0800A6268E /* BaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 798269221703EB0800A6268E /* BaseItem.m */; };
 		798269281703EE2B00A6268E /* diet.png in Resources */ = {isa = PBXBuildFile; fileRef = 798269271703EE2B00A6268E /* diet.png */; };
@@ -44,21 +52,12 @@
 		7982698F17049AA000A6268E /* FoodItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7982698E17049AA000A6268E /* FoodItem.m */; };
 		798552981707DA47007A24BE /* UIViewController+TimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 798552971707DA46007A24BE /* UIViewController+TimeView.m */; };
 		7998C08E16FED27600411669 /* PedometerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7998C08D16FED27600411669 /* PedometerViewController.m */; };
-		79A204A41700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A204A31700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		79A204CA170047C200E3F564 /* NSObject+PropertyListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A204C9170047C200E3F564 /* NSObject+PropertyListing.m */; };
 		79A204D017004F1400E3F564 /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79A204CF17004F1400E3F564 /* Defaults.plist */; };
-		79A204E417006C2900E3F564 /* ShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A204E317006C2900E3F564 /* ShakeViewController.m */; };
 		79CA72B917058E0B0077AB51 /* FoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CA72B817058E0B0077AB51 /* FoodViewController.m */; };
-		79CA72CA17058FE00077AB51 /* NSArray+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CA72C717058FE00077AB51 /* NSArray+Addition.m */; };
-		79CA72CB17058FE00077AB51 /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CA72C917058FE00077AB51 /* UIView+Addition.m */; };
 		79CA72D6170597A10077AB51 /* CooldownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CA72D5170597A10077AB51 /* CooldownViewController.m */; };
 		79CA74351705E6800077AB51 /* RoleInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79CA74341705E6800077AB51 /* RoleInfoView.xib */; };
-		79CA743C1705E75B0077AB51 /* MethodSwizzle.c in Sources */ = {isa = PBXBuildFile; fileRef = 79CA74361705E75A0077AB51 /* MethodSwizzle.c */; };
-		79CA743D1705E75B0077AB51 /* NSObject+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CA74391705E75A0077AB51 /* NSObject+Swizzle.m */; };
-		79CA743E1705E75B0077AB51 /* UIViewController+StoryboardExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CA743B1705E75A0077AB51 /* UIViewController+StoryboardExtend.m */; };
 		79CA74441705F6EA0077AB51 /* BeefItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CA74431705F6EA0077AB51 /* BeefItem.m */; };
 		79E1BC801701B70100FD8CC1 /* RunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1BC7F1701B70100FD8CC1 /* RunViewController.m */; };
-		79EDDA4916FF208300DFF0F3 /* module.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EDDA4616FF208300DFF0F3 /* module.m */; };
 		79EDDA6316FF45A200DFF0F3 /* DrinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EDDA6216FF45A200DFF0F3 /* DrinkViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -82,31 +81,48 @@
 		7969400516FDFA6300302DFA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7969400D16FE006200302DFA /* Role.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Role.h; sourceTree = "<group>"; };
 		7969400E16FE006200302DFA /* Role.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Role.m; sourceTree = "<group>"; };
-		796F61B91700DBCA0049576F /* MotionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionViewController.h; sourceTree = "<group>"; };
-		796F61BA1700DBCA0049576F /* MotionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionViewController.m; sourceTree = "<group>"; };
-		796F61BB1700DBCA0049576F /* MoveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveViewController.h; sourceTree = "<group>"; };
-		796F61BC1700DBCA0049576F /* MoveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveViewController.m; sourceTree = "<group>"; };
+		7969FA3B170D6013005224DE /* Http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Http.h; sourceTree = "<group>"; };
+		7969FA3C170D6013005224DE /* Http.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Http.m; sourceTree = "<group>"; };
+		7969FA3D170D6013005224DE /* ios-module-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ios-module-Prefix.pch"; sourceTree = "<group>"; };
+		7969FA3E170D6013005224DE /* ios_module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ios_module.h; sourceTree = "<group>"; };
+		7969FA3F170D6013005224DE /* ios_module.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ios_module.m; sourceTree = "<group>"; };
+		7969FA40170D6013005224DE /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		7969FA41170D6013005224DE /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		7969FA42170D6013005224DE /* MethodSwizzle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MethodSwizzle.c; sourceTree = "<group>"; };
+		7969FA43170D6013005224DE /* MethodSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodSwizzle.h; sourceTree = "<group>"; };
+		7969FA44170D6013005224DE /* MotionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionViewController.h; sourceTree = "<group>"; };
+		7969FA45170D6013005224DE /* MotionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionViewController.m; sourceTree = "<group>"; };
+		7969FA46170D6013005224DE /* MoveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveViewController.h; sourceTree = "<group>"; };
+		7969FA47170D6013005224DE /* MoveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveViewController.m; sourceTree = "<group>"; };
+		7969FA48170D6013005224DE /* NSArray+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Addition.h"; sourceTree = "<group>"; };
+		7969FA49170D6013005224DE /* NSArray+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Addition.m"; sourceTree = "<group>"; };
+		7969FA4A170D6013005224DE /* NSObject+PropertyListing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PropertyListing.h"; sourceTree = "<group>"; };
+		7969FA4B170D6013005224DE /* NSObject+PropertyListing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PropertyListing.m"; sourceTree = "<group>"; };
+		7969FA4C170D6013005224DE /* NSObject+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzle.h"; sourceTree = "<group>"; };
+		7969FA4D170D6013005224DE /* NSObject+Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzle.m"; sourceTree = "<group>"; };
+		7969FA4E170D6013005224DE /* NSUserDefaults+MPSecureUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+MPSecureUserDefaults.h"; sourceTree = "<group>"; };
+		7969FA4F170D6013005224DE /* NSUserDefaults+MPSecureUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+MPSecureUserDefaults.m"; sourceTree = "<group>"; };
+		7969FA50170D6013005224DE /* OpenWeatherMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenWeatherMap.h; sourceTree = "<group>"; };
+		7969FA51170D6013005224DE /* OpenWeatherMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenWeatherMap.m; sourceTree = "<group>"; };
+		7969FA52170D6013005224DE /* ShakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeViewController.h; sourceTree = "<group>"; };
+		7969FA53170D6013005224DE /* ShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeViewController.m; sourceTree = "<group>"; };
+		7969FA54170D6013005224DE /* Station.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Station.h; sourceTree = "<group>"; };
+		7969FA55170D6013005224DE /* Station.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Station.m; sourceTree = "<group>"; };
+		7969FA56170D6013005224DE /* UIView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Addition.h"; sourceTree = "<group>"; };
+		7969FA57170D6013005224DE /* UIView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addition.m"; sourceTree = "<group>"; };
+		7969FA58170D6013005224DE /* UIViewController+StoryboardExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+StoryboardExtend.h"; sourceTree = "<group>"; };
+		7969FA59170D6013005224DE /* UIViewController+StoryboardExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+StoryboardExtend.m"; sourceTree = "<group>"; };
+		7969FA5A170D6013005224DE /* Weather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
+		7969FA5B170D6013005224DE /* Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
 		796F61C01700DBE40049576F /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		796F61C21700DBE90049576F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		797A51251706D94D0072DD9B /* UIViewController+Stop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Stop.h"; sourceTree = "<group>"; };
 		797A51261706D94D0072DD9B /* UIViewController+Stop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Stop.m"; sourceTree = "<group>"; };
-		797A512E1706EED90072DD9B /* UIViewController+ImpStoryboardExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ImpStoryboardExtend.h"; sourceTree = "<group>"; };
-		797A512F1706EED90072DD9B /* UIViewController+ImpStoryboardExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ImpStoryboardExtend.m"; sourceTree = "<group>"; };
 		797A51311706F2980072DD9B /* UIViewController+RoleInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RoleInfo.h"; sourceTree = "<group>"; };
 		797A51321706F2980072DD9B /* UIViewController+RoleInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RoleInfo.m"; sourceTree = "<group>"; };
 		797A5134170732E10072DD9B /* TimeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeView.h; sourceTree = "<group>"; };
 		797A5135170732E10072DD9B /* TimeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeView.m; sourceTree = "<group>"; };
 		797A5137170732F30072DD9B /* TimeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeView.xib; sourceTree = "<group>"; };
-		797F659B1703642E00D01C5B /* Http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Http.h; sourceTree = "<group>"; };
-		797F659C1703642E00D01C5B /* Http.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Http.m; sourceTree = "<group>"; };
-		797F659D1703642E00D01C5B /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		797F659E1703642E00D01C5B /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
-		797F659F1703642E00D01C5B /* OpenWeatherMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenWeatherMap.h; sourceTree = "<group>"; };
-		797F65A01703642E00D01C5B /* OpenWeatherMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenWeatherMap.m; sourceTree = "<group>"; };
-		797F65A11703642E00D01C5B /* Station.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Station.h; sourceTree = "<group>"; };
-		797F65A21703642E00D01C5B /* Station.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Station.m; sourceTree = "<group>"; };
-		797F65A31703642E00D01C5B /* Weather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
-		797F65A41703642E00D01C5B /* Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
 		797F65AB1703689500D01C5B /* RoleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoleViewController.h; sourceTree = "<group>"; };
 		797F65AC1703689500D01C5B /* RoleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoleViewController.m; sourceTree = "<group>"; };
 		798269211703EB0800A6268E /* BaseItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseItem.h; sourceTree = "<group>"; };
@@ -126,35 +142,16 @@
 		798552971707DA46007A24BE /* UIViewController+TimeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TimeView.m"; sourceTree = "<group>"; };
 		7998C08C16FED27600411669 /* PedometerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PedometerViewController.h; sourceTree = "<group>"; };
 		7998C08D16FED27600411669 /* PedometerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PedometerViewController.m; sourceTree = "<group>"; };
-		79A204A21700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+MPSecureUserDefaults.h"; sourceTree = "<group>"; };
-		79A204A31700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+MPSecureUserDefaults.m"; sourceTree = "<group>"; };
-		79A204C8170047C200E3F564 /* NSObject+PropertyListing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PropertyListing.h"; sourceTree = "<group>"; };
-		79A204C9170047C200E3F564 /* NSObject+PropertyListing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PropertyListing.m"; sourceTree = "<group>"; };
 		79A204CF17004F1400E3F564 /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Defaults.plist; sourceTree = "<group>"; };
-		79A204E217006C2900E3F564 /* ShakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeViewController.h; sourceTree = "<group>"; };
-		79A204E317006C2900E3F564 /* ShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeViewController.m; sourceTree = "<group>"; };
 		79CA72B717058E0B0077AB51 /* FoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodViewController.h; sourceTree = "<group>"; };
 		79CA72B817058E0B0077AB51 /* FoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodViewController.m; sourceTree = "<group>"; };
-		79CA72C617058FE00077AB51 /* NSArray+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Addition.h"; sourceTree = "<group>"; };
-		79CA72C717058FE00077AB51 /* NSArray+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Addition.m"; sourceTree = "<group>"; };
-		79CA72C817058FE00077AB51 /* UIView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Addition.h"; sourceTree = "<group>"; };
-		79CA72C917058FE00077AB51 /* UIView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addition.m"; sourceTree = "<group>"; };
 		79CA72D4170597A10077AB51 /* CooldownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CooldownViewController.h; sourceTree = "<group>"; };
 		79CA72D5170597A10077AB51 /* CooldownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CooldownViewController.m; sourceTree = "<group>"; };
 		79CA74341705E6800077AB51 /* RoleInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoleInfoView.xib; sourceTree = "<group>"; };
-		79CA74361705E75A0077AB51 /* MethodSwizzle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MethodSwizzle.c; sourceTree = "<group>"; };
-		79CA74371705E75A0077AB51 /* MethodSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodSwizzle.h; sourceTree = "<group>"; };
-		79CA74381705E75A0077AB51 /* NSObject+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzle.h"; sourceTree = "<group>"; };
-		79CA74391705E75A0077AB51 /* NSObject+Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzle.m"; sourceTree = "<group>"; };
-		79CA743A1705E75A0077AB51 /* UIViewController+StoryboardExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+StoryboardExtend.h"; sourceTree = "<group>"; };
-		79CA743B1705E75A0077AB51 /* UIViewController+StoryboardExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+StoryboardExtend.m"; sourceTree = "<group>"; };
 		79CA74421705F6EA0077AB51 /* BeefItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeefItem.h; sourceTree = "<group>"; };
 		79CA74431705F6EA0077AB51 /* BeefItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeefItem.m; sourceTree = "<group>"; };
 		79E1BC7E1701B70100FD8CC1 /* RunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunViewController.h; sourceTree = "<group>"; };
 		79E1BC7F1701B70100FD8CC1 /* RunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunViewController.m; sourceTree = "<group>"; };
-		79EDDA4416FF208300DFF0F3 /* module-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "module-Prefix.pch"; sourceTree = "<group>"; };
-		79EDDA4516FF208300DFF0F3 /* module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = module.h; sourceTree = "<group>"; };
-		79EDDA4616FF208300DFF0F3 /* module.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = module.m; sourceTree = "<group>"; };
 		79EDDA6116FF45A200DFF0F3 /* DrinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkViewController.h; sourceTree = "<group>"; };
 		79EDDA6216FF45A200DFF0F3 /* DrinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -202,7 +199,7 @@
 		79693FD716FDFA6300302DFA = {
 			isa = PBXGroup;
 			children = (
-				79EDDA4316FF208300DFF0F3 /* module */,
+				7969FA3A170D6013005224DE /* ios-module */,
 				79693FEC16FDFA6300302DFA /* lifebaby */,
 				79693FE516FDFA6300302DFA /* Frameworks */,
 				79693FE316FDFA6300302DFA /* Products */,
@@ -272,6 +269,47 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		7969FA3A170D6013005224DE /* ios-module */ = {
+			isa = PBXGroup;
+			children = (
+				7969FA3B170D6013005224DE /* Http.h */,
+				7969FA3C170D6013005224DE /* Http.m */,
+				7969FA3D170D6013005224DE /* ios-module-Prefix.pch */,
+				7969FA3E170D6013005224DE /* ios_module.h */,
+				7969FA3F170D6013005224DE /* ios_module.m */,
+				7969FA40170D6013005224DE /* JSONKit.h */,
+				7969FA41170D6013005224DE /* JSONKit.m */,
+				7969FA42170D6013005224DE /* MethodSwizzle.c */,
+				7969FA43170D6013005224DE /* MethodSwizzle.h */,
+				7969FA44170D6013005224DE /* MotionViewController.h */,
+				7969FA45170D6013005224DE /* MotionViewController.m */,
+				7969FA46170D6013005224DE /* MoveViewController.h */,
+				7969FA47170D6013005224DE /* MoveViewController.m */,
+				7969FA48170D6013005224DE /* NSArray+Addition.h */,
+				7969FA49170D6013005224DE /* NSArray+Addition.m */,
+				7969FA4A170D6013005224DE /* NSObject+PropertyListing.h */,
+				7969FA4B170D6013005224DE /* NSObject+PropertyListing.m */,
+				7969FA4C170D6013005224DE /* NSObject+Swizzle.h */,
+				7969FA4D170D6013005224DE /* NSObject+Swizzle.m */,
+				7969FA4E170D6013005224DE /* NSUserDefaults+MPSecureUserDefaults.h */,
+				7969FA4F170D6013005224DE /* NSUserDefaults+MPSecureUserDefaults.m */,
+				7969FA50170D6013005224DE /* OpenWeatherMap.h */,
+				7969FA51170D6013005224DE /* OpenWeatherMap.m */,
+				7969FA52170D6013005224DE /* ShakeViewController.h */,
+				7969FA53170D6013005224DE /* ShakeViewController.m */,
+				7969FA54170D6013005224DE /* Station.h */,
+				7969FA55170D6013005224DE /* Station.m */,
+				7969FA56170D6013005224DE /* UIView+Addition.h */,
+				7969FA57170D6013005224DE /* UIView+Addition.m */,
+				7969FA58170D6013005224DE /* UIViewController+StoryboardExtend.h */,
+				7969FA59170D6013005224DE /* UIViewController+StoryboardExtend.m */,
+				7969FA5A170D6013005224DE /* Weather.h */,
+				7969FA5B170D6013005224DE /* Weather.m */,
+			);
+			name = "ios-module";
+			path = "../ios-module/ios-module";
+			sourceTree = "<group>";
+		};
 		797A51291706DEA10072DD9B /* RoleViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,8 +319,6 @@
 				797F65AC1703689500D01C5B /* RoleViewController.m */,
 				797A51251706D94D0072DD9B /* UIViewController+Stop.h */,
 				797A51261706D94D0072DD9B /* UIViewController+Stop.m */,
-				797A512E1706EED90072DD9B /* UIViewController+ImpStoryboardExtend.h */,
-				797A512F1706EED90072DD9B /* UIViewController+ImpStoryboardExtend.m */,
 			);
 			name = RoleViewControllers;
 			sourceTree = "<group>";
@@ -371,47 +407,6 @@
 			name = SportViewControllers;
 			sourceTree = "<group>";
 		};
-		79EDDA4316FF208300DFF0F3 /* module */ = {
-			isa = PBXGroup;
-			children = (
-				79CA74361705E75A0077AB51 /* MethodSwizzle.c */,
-				79CA74371705E75A0077AB51 /* MethodSwizzle.h */,
-				79CA74381705E75A0077AB51 /* NSObject+Swizzle.h */,
-				79CA74391705E75A0077AB51 /* NSObject+Swizzle.m */,
-				79CA743A1705E75A0077AB51 /* UIViewController+StoryboardExtend.h */,
-				79CA743B1705E75A0077AB51 /* UIViewController+StoryboardExtend.m */,
-				79CA72C617058FE00077AB51 /* NSArray+Addition.h */,
-				79CA72C717058FE00077AB51 /* NSArray+Addition.m */,
-				79CA72C817058FE00077AB51 /* UIView+Addition.h */,
-				79CA72C917058FE00077AB51 /* UIView+Addition.m */,
-				797F659B1703642E00D01C5B /* Http.h */,
-				797F659C1703642E00D01C5B /* Http.m */,
-				797F659D1703642E00D01C5B /* JSONKit.h */,
-				797F659E1703642E00D01C5B /* JSONKit.m */,
-				797F659F1703642E00D01C5B /* OpenWeatherMap.h */,
-				797F65A01703642E00D01C5B /* OpenWeatherMap.m */,
-				797F65A11703642E00D01C5B /* Station.h */,
-				797F65A21703642E00D01C5B /* Station.m */,
-				797F65A31703642E00D01C5B /* Weather.h */,
-				797F65A41703642E00D01C5B /* Weather.m */,
-				796F61B91700DBCA0049576F /* MotionViewController.h */,
-				796F61BA1700DBCA0049576F /* MotionViewController.m */,
-				796F61BB1700DBCA0049576F /* MoveViewController.h */,
-				796F61BC1700DBCA0049576F /* MoveViewController.m */,
-				79A204E217006C2900E3F564 /* ShakeViewController.h */,
-				79A204E317006C2900E3F564 /* ShakeViewController.m */,
-				79A204C8170047C200E3F564 /* NSObject+PropertyListing.h */,
-				79A204C9170047C200E3F564 /* NSObject+PropertyListing.m */,
-				79A204A21700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.h */,
-				79A204A31700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.m */,
-				79EDDA4416FF208300DFF0F3 /* module-Prefix.pch */,
-				79EDDA4516FF208300DFF0F3 /* module.h */,
-				79EDDA4616FF208300DFF0F3 /* module.m */,
-			);
-			name = module;
-			path = ../module/module;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -488,19 +483,8 @@
 				7969400616FDFA6300302DFA /* ViewController.m in Sources */,
 				7969400F16FE006200302DFA /* Role.m in Sources */,
 				7998C08E16FED27600411669 /* PedometerViewController.m in Sources */,
-				79EDDA4916FF208300DFF0F3 /* module.m in Sources */,
 				79EDDA6316FF45A200DFF0F3 /* DrinkViewController.m in Sources */,
-				79A204A41700136000E3F564 /* NSUserDefaults+MPSecureUserDefaults.m in Sources */,
-				79A204CA170047C200E3F564 /* NSObject+PropertyListing.m in Sources */,
-				79A204E417006C2900E3F564 /* ShakeViewController.m in Sources */,
-				796F61BD1700DBCA0049576F /* MotionViewController.m in Sources */,
-				796F61BE1700DBCA0049576F /* MoveViewController.m in Sources */,
 				79E1BC801701B70100FD8CC1 /* RunViewController.m in Sources */,
-				797F65A51703642E00D01C5B /* Http.m in Sources */,
-				797F65A61703642E00D01C5B /* JSONKit.m in Sources */,
-				797F65A71703642E00D01C5B /* OpenWeatherMap.m in Sources */,
-				797F65A81703642E00D01C5B /* Station.m in Sources */,
-				797F65A91703642E00D01C5B /* Weather.m in Sources */,
 				797F65AD1703689500D01C5B /* RoleViewController.m in Sources */,
 				798269231703EB0800A6268E /* BaseItem.m in Sources */,
 				7982692C1703FBD200A6268E /* WaterItem.m in Sources */,
@@ -509,18 +493,28 @@
 				7982698B170498B900A6268E /* DrinkItem.m in Sources */,
 				7982698F17049AA000A6268E /* FoodItem.m in Sources */,
 				79CA72B917058E0B0077AB51 /* FoodViewController.m in Sources */,
-				79CA72CA17058FE00077AB51 /* NSArray+Addition.m in Sources */,
-				79CA72CB17058FE00077AB51 /* UIView+Addition.m in Sources */,
 				79CA72D6170597A10077AB51 /* CooldownViewController.m in Sources */,
-				79CA743C1705E75B0077AB51 /* MethodSwizzle.c in Sources */,
-				79CA743D1705E75B0077AB51 /* NSObject+Swizzle.m in Sources */,
-				79CA743E1705E75B0077AB51 /* UIViewController+StoryboardExtend.m in Sources */,
 				79CA74441705F6EA0077AB51 /* BeefItem.m in Sources */,
 				797A51271706D94D0072DD9B /* UIViewController+Stop.m in Sources */,
-				797A51301706EED90072DD9B /* UIViewController+ImpStoryboardExtend.m in Sources */,
 				797A51331706F2980072DD9B /* UIViewController+RoleInfo.m in Sources */,
 				797A5136170732E10072DD9B /* TimeView.m in Sources */,
 				798552981707DA47007A24BE /* UIViewController+TimeView.m in Sources */,
+				7969FA5C170D6013005224DE /* Http.m in Sources */,
+				7969FA5D170D6013005224DE /* ios_module.m in Sources */,
+				7969FA5E170D6013005224DE /* JSONKit.m in Sources */,
+				7969FA5F170D6013005224DE /* MethodSwizzle.c in Sources */,
+				7969FA60170D6013005224DE /* MotionViewController.m in Sources */,
+				7969FA61170D6013005224DE /* MoveViewController.m in Sources */,
+				7969FA62170D6013005224DE /* NSArray+Addition.m in Sources */,
+				7969FA63170D6013005224DE /* NSObject+PropertyListing.m in Sources */,
+				7969FA64170D6013005224DE /* NSObject+Swizzle.m in Sources */,
+				7969FA65170D6013005224DE /* NSUserDefaults+MPSecureUserDefaults.m in Sources */,
+				7969FA66170D6013005224DE /* OpenWeatherMap.m in Sources */,
+				7969FA67170D6013005224DE /* ShakeViewController.m in Sources */,
+				7969FA68170D6013005224DE /* Station.m in Sources */,
+				7969FA69170D6013005224DE /* UIView+Addition.m in Sources */,
+				7969FA6A170D6013005224DE /* UIViewController+StoryboardExtend.m in Sources */,
+				7969FA6B170D6013005224DE /* Weather.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
